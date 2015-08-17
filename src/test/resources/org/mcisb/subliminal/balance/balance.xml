@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<sbml xmlns="http://www.sbml.org/sbml/level2/version4" level="2" version="4">
+  <model>
+    <listOfCompartments>
+      <compartment id="i"/>
+      <compartment id="e"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="H_i" metaid="mi" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#mi">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/obo.chebi/CHEBI:15378"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species id="H_e" metaid="me" compartment="e">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#me">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/obo.chebi/CHEBI:15378"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species id="a" compartment="i">
+        <notes>
+		  <body xmlns="http://www.w3.org/1999/xhtml"><p>FORMULA: C</p><p>CHARGE: 0</p></body>
+        </notes>
+      </species>
+      <species id="bb" compartment="i">
+        <notes>
+		  <body xmlns="http://www.w3.org/1999/xhtml"><p>FORMULA: C</p><p>CHARGE: 0</p></body>
+        </notes>
+      </species>
+      <species id="c" compartment="i" boundaryCondition="true">
+        <notes>
+		  <body xmlns="http://www.w3.org/1999/xhtml"><p>FORMULA: C</p><p>CHARGE: 0</p></body>
+        </notes>
+      </species>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="metabolic">
+        <listOfReactants>
+          <speciesReference species="H_i" stoichiometry="5"/>
+          <speciesReference species="a" stoichiometry="2"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="H_i" stoichiometry="4"/>
+          <speciesReference species="bb" stoichiometry="2"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="transport">
+        <listOfReactants>
+          <speciesReference species="H_i" stoichiometry="4"/>
+          <speciesReference species="a" stoichiometry="2"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="H_e" stoichiometry="5"/>
+          <speciesReference species="bb" stoichiometry="2"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="boundary">
+        <listOfReactants>
+          <speciesReference species="c"/>
+        </listOfReactants>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

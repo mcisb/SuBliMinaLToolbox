@@ -1,0 +1,3162 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<sbml xmlns="http://www.sbml.org/sbml/level2/version4" level="2" version="4">
+  <model id="_d14cf141_d48e_41b7_bb8f_d0647ab62fa8" metaid="_5a663b6f_b7dc_4a85_918e_336f3d97ed9b">
+    <annotation>
+      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+        <rdf:Description rdf:about="#_5a663b6f_b7dc_4a85_918e_336f3d97ed9b">
+          <dcterms:created rdf:parseType="Resource">
+            <dcterms:W3CDTF>2013-02-28T13:49:24Z</dcterms:W3CDTF>
+          </dcterms:created>
+          <dcterms:modified rdf:parseType="Resource">
+            <dcterms:W3CDTF>2013-02-28T13:49:25Z</dcterms:W3CDTF>
+          </dcterms:modified>
+          <bqbiol:occursIn>
+            <rdf:Bag>
+              <rdf:li rdf:resource="http://identifiers.org/taxonomy/559292"/>
+            </rdf:Bag>
+          </bqbiol:occursIn>
+          <bqbiol:isDescribedBy>
+            <rdf:Bag>
+              <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+            </rdf:Bag>
+          </bqbiol:isDescribedBy>
+        </rdf:Description>
+      </rdf:RDF>
+    </annotation>
+    <listOfCompartments>
+      <compartment id="i" name="intracellular" metaid="_5fbccef8_03bf_444d_b13a_86f6a2633d07" sboTerm="SBO:0000290" size="1">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_5fbccef8_03bf_444d_b13a_86f6a2633d07">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/obo.go/GO:0005622"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</compartment>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="sce_YKL060C" initialConcentration="1" name="Fructose-bisphosphate aldolase" metaid="_106ff8fb_475b_4a3f_aa0c_98a962e252f6" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_106ff8fb_475b_4a3f_aa0c_98a962e252f6">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/P14540"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YKL060C"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="C05378" initialConcentration="1" charge="0" name="beta-D-fructofuranose 1,6-bisphosphate" metaid="_a53c0333_5d0b_4446_a99f_6e5331c0b079" sboTerm="SBO:0000247" compartment="i">
+<notes><body xmlns="http://www.w3.org/1999/xhtml"><p>CHARGE: 0</p><p>FORMULA: C6H14O12P2</p><p>SMILES: O[C@H]1[C@H](O)[C@@](O)(COP(=O)(O)O)O[C@@H]1COP(=O)(O)O</p></body></notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_a53c0333_5d0b_4446_a99f_6e5331c0b079">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:28013"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species id="C00111" initialConcentration="1" charge="0" name="glycerone phosphate" metaid="_540498df_ae7e_4beb_84a4_f76020e6722a" sboTerm="SBO:0000247" compartment="i">
+<notes><body xmlns="http://www.w3.org/1999/xhtml"><p>CHARGE: 0</p><p>FORMULA: C3H7O6P</p><p>SMILES: OCC(=O)COP(=O)(O)O</p></body></notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_540498df_ae7e_4beb_84a4_f76020e6722a">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:16108"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species id="C00118" initialConcentration="1" charge="0" name="D-glyceraldehyde 3-phosphate" metaid="_d8452ca9_b605_436a_a62b_169e08236736" sboTerm="SBO:0000247" compartment="i">
+<notes><body xmlns="http://www.w3.org/1999/xhtml"><p>CHARGE: 0</p><p>FORMULA: C3H7O6P</p><p>SMILES: [H]C(=O)[C@H](O)COP(O)(O)=O</p></body></notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_d8452ca9_b605_436a_a62b_169e08236736">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:29052"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species id="sce_YER073W" initialConcentration="1" name="Aldehyde dehydrogenase 5, mitochondrial" metaid="_a9659c23_f595_446d_ba6c_8a114d4eaf18" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_a9659c23_f595_446d_ba6c_8a114d4eaf18">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/P40047"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YER073W"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="sce_YOR374W" initialConcentration="1" name="Potassium-activated aldehyde dehydrogenase, mitochondrial" metaid="_e5c9309a_827b_4aaf_85e3_49420af7ad37" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_e5c9309a_827b_4aaf_85e3_49420af7ad37">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/P46367"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YOR374W"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="sce_YPL061W" initialConcentration="1" name="Magnesium-activated aldehyde dehydrogenase, cytosolic" metaid="_f4b3c18d_2b7b_4121_ab7d_c2fa8fd69ece" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_f4b3c18d_2b7b_4121_ab7d_c2fa8fd69ece">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/P54115"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YPL061W"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="C00084" initialConcentration="1" charge="0" name="acetaldehyde" metaid="_7e529e49_89a4_43d5_bd88_65ef94064d59" sboTerm="SBO:0000247" compartment="i">
+<notes><body xmlns="http://www.w3.org/1999/xhtml"><p>CHARGE: 0</p><p>FORMULA: C2H4O</p><p>SMILES: CC=O</p></body></notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_7e529e49_89a4_43d5_bd88_65ef94064d59">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:15343"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species id="C00003" initialConcentration="1" charge="1" name="NAD(+)" metaid="_2a9070fd_232c_46b7_8e46_8c94abf887b4" sboTerm="SBO:0000247" compartment="i">
+<notes><body xmlns="http://www.w3.org/1999/xhtml"><p>CHARGE: 1</p><p>FORMULA: C21H28N7O14P2</p><p>SMILES: NC(=O)c1ccc[n+](c1)[C@@H]1O[C@H](COP(O)(=O)OP(O)(=O)OC[C@H]2O[C@H]([C@H](O)[C@@H]2O)n2cnc3c(N)ncnc23)[C@@H](O)[C@H]1O</p></body></notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_2a9070fd_232c_46b7_8e46_8c94abf887b4">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:15846"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species id="C00001" initialConcentration="1" charge="0" name="water" metaid="_97d048fa_0eba_4ae1_a159_66258881dc97" sboTerm="SBO:0000247" compartment="i">
+<notes><body xmlns="http://www.w3.org/1999/xhtml"><p>CHARGE: 0</p><p>FORMULA: H2O</p><p>SMILES: O</p></body></notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_97d048fa_0eba_4ae1_a159_66258881dc97">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:15377"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species id="C00033" initialConcentration="1" charge="0" name="acetic acid" metaid="_b07265b5_16b8_40fc_bd0a_e5febb006988" sboTerm="SBO:0000247" compartment="i">
+<notes><body xmlns="http://www.w3.org/1999/xhtml"><p>CHARGE: 0</p><p>FORMULA: C2H4O2</p><p>SMILES: CC(=O)O</p></body></notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_b07265b5_16b8_40fc_bd0a_e5febb006988">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:15366"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species id="C00004" initialConcentration="1" charge="0" name="NADH" metaid="_c3dc1387_30ac_4adb_861f_9a93535d684c" sboTerm="SBO:0000247" compartment="i">
+<notes><body xmlns="http://www.w3.org/1999/xhtml"><p>CHARGE: 0</p><p>FORMULA: C21H29N7O14P2</p><p>SMILES: NC(=O)C1=CN(C=CC1)[C@@H]1O[C@H](COP(O)(=O)OP(O)(=O)OC[C@H]2O[C@H]([C@H](O)[C@@H]2O)n2cnc3c(N)ncnc23)[C@@H](O)[C@H]1O</p></body></notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_c3dc1387_30ac_4adb_861f_9a93535d684c">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:16908"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species id="C00080" initialConcentration="1" charge="1" name="hydron" metaid="_15578325_8678_46ab_8d46_a4ae55da2656" sboTerm="SBO:0000247" compartment="i">
+<notes><body xmlns="http://www.w3.org/1999/xhtml"><p>CHARGE: 1</p><p>FORMULA: H</p><p>SMILES: [H+]</p></body></notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_15578325_8678_46ab_8d46_a4ae55da2656">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:15378"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species id="sce_YMR169C" initialConcentration="1" name="Aldehyde dehydrogenase [NAD" metaid="_e1a66677_9d19_41a0_bacd_0b0809493f0a" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_e1a66677_9d19_41a0_bacd_0b0809493f0a">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/P54114"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YMR169C"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="sce_YMR170C" initialConcentration="1" name="Aldehyde dehydrogenase [NAD" metaid="_69196a0f_a6ff_4c1e_9b9b_0d18b09f1384" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_69196a0f_a6ff_4c1e_9b9b_0d18b09f1384">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/P47771"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YMR170C"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="C00006" initialConcentration="1" charge="1" name="NADP(+)" metaid="_0c86b68b_ce0e_4702_932d_edfdb15ead34" sboTerm="SBO:0000247" compartment="i">
+<notes><body xmlns="http://www.w3.org/1999/xhtml"><p>CHARGE: 1</p><p>FORMULA: C21H29N7O17P3</p><p>SMILES: NC(=O)c1ccc[n+](c1)[C@@H]1O[C@H](COP(O)(=O)OP(O)(=O)OC[C@H]2O[C@H]([C@H](OP(O)(O)=O)[C@@H]2O)n2cnc3c(N)ncnc23)[C@@H](O)[C@H]1O</p></body></notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_0c86b68b_ce0e_4702_932d_edfdb15ead34">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:18009"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species id="C00005" initialConcentration="1" charge="0" name="NADPH" metaid="_b8ef6b64_42b4_4b82_8892_e281b318a9ad" sboTerm="SBO:0000247" compartment="i">
+<notes><body xmlns="http://www.w3.org/1999/xhtml"><p>CHARGE: 0</p><p>FORMULA: C21H30N7O17P3</p><p>SMILES: NC(=O)C1=CN(C=CC1)[C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@H]([C@H](OP(=O)(O)O)[C@@H]3O)n4cnc5c(N)ncnc45)[C@@H](O)[C@H]2O</p></body></notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_b8ef6b64_42b4_4b82_8892_e281b318a9ad">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:16474"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species id="sce_YDL080C" initialConcentration="1" name="Thiamine metabolism regulatory protein THI3" metaid="_a5cc8bbc_cc43_46ab_982a_042998414fba" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_a5cc8bbc_cc43_46ab_982a_042998414fba">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/Q07471"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YDL080C"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="sce_YGR087C" initialConcentration="1" name="Pyruvate decarboxylase isozyme 3" metaid="_0a24efd3_88a5_468f_8a65_8b43bc3452fc" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_0a24efd3_88a5_468f_8a65_8b43bc3452fc">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/P26263"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YGR087C"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="sce_YLR044C" initialConcentration="1" name="Pyruvate decarboxylase isozyme 1" metaid="_c2f0f86f_166e_4971_b34a_4e1f35ceb62d" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_c2f0f86f_166e_4971_b34a_4e1f35ceb62d">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/P06169"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YLR044C"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="sce_YLR134W" initialConcentration="1" name="Pyruvate decarboxylase isozyme 2" metaid="_bad5d4dd_36f0_4a22_80ff_48383a819c76" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_bad5d4dd_36f0_4a22_80ff_48383a819c76">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/P16467"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YLR134W"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="C00068" initialConcentration="1" charge="1" name="thiamine(1+) diphosphate" metaid="_bdb0aae1_73aa_4510_be47_918b58d3b13f" sboTerm="SBO:0000247" compartment="i">
+<notes><body xmlns="http://www.w3.org/1999/xhtml"><p>CHARGE: 1</p><p>FORMULA: C12H19N4O7P2S</p><p>SMILES: Cc1ncc(C[n+]2csc(CCOP(=O)(O)OP(=O)(O)O)c2C)c(N)n1</p></body></notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_bdb0aae1_73aa_4510_be47_918b58d3b13f">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:9532"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species id="C05125" initialConcentration="1" charge="1" name="2-(1-hydroxyethyl)thiamine diphosphate" metaid="_4bbda51a_83e5_4d02_b31c_104ec7e432e5" sboTerm="SBO:0000247" compartment="i">
+<notes><body xmlns="http://www.w3.org/1999/xhtml"><p>CHARGE: 1</p><p>FORMULA: C14H23N4O8P2S</p><p>SMILES: CC(O)c1sc(CCOP(O)(=O)OP(O)(O)=O)c(C)[n+]1Cc1cnc(C)nc1N</p></body></notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_4bbda51a_83e5_4d02_b31c_104ec7e432e5">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:978"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species id="sce_YCR105W" initialConcentration="1" name="NADP-dependent alcohol dehydrogenase 7" metaid="_d86d373e_8526_47b4_8c09_d09aea6ae8b9" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_d86d373e_8526_47b4_8c09_d09aea6ae8b9">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/P25377"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YCR105W"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="sce_YMR318C" initialConcentration="1" name="NADP-dependent alcohol dehydrogenase 6" metaid="_92311cac_3669_457b_8f81_15d26d401c63" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_92311cac_3669_457b_8f81_15d26d401c63">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/Q04894"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YMR318C"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="C00469" initialConcentration="1" charge="0" name="ethanol" metaid="_72b8f425_bfe8_47b0_b65e_702a6e8a0d2a" sboTerm="SBO:0000247" compartment="i">
+<notes><body xmlns="http://www.w3.org/1999/xhtml"><p>CHARGE: 0</p><p>FORMULA: C2H6O</p><p>SMILES: CCO</p></body></notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_72b8f425_bfe8_47b0_b65e_702a6e8a0d2a">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:16236"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species id="sce_YBR145W" initialConcentration="1" name="Alcohol dehydrogenase 5" metaid="_af8e0f64_c112_4b93_b339_16cc6f9cfe2f" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_af8e0f64_c112_4b93_b339_16cc6f9cfe2f">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/P38113"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YBR145W"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="sce_YDL168W" initialConcentration="1" name="S-" metaid="_05b48ee1_1684_411f_9537_1c6966e4a71f" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_05b48ee1_1684_411f_9537_1c6966e4a71f">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/P32771"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YDL168W"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="sce_YGL256W" initialConcentration="1" name="Alcohol dehydrogenase 4" metaid="_79d93192_3195_481b_b94b_265c78d35a07" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_79d93192_3195_481b_b94b_265c78d35a07">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/P10127"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YGL256W"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="sce_YMR083W" initialConcentration="1" name="Alcohol dehydrogenase 3, mitochondrial" metaid="_134fb542_a24b_426f_bdab_cf7f4e2f264d" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_134fb542_a24b_426f_bdab_cf7f4e2f264d">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/P07246"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YMR083W"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="sce_YMR303C" initialConcentration="1" name="Alcohol dehydrogenase 2" metaid="_78a82e5d_2822_4257_b65f_cb1f181d3865" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_78a82e5d_2822_4257_b65f_cb1f181d3865">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/P00331"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YMR303C"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="sce_YOL086C" initialConcentration="1" name="Alcohol dehydrogenase 1" metaid="_5deb559b_5c5e_448e_876e_5d1d64f1bad7" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_5deb559b_5c5e_448e_876e_5d1d64f1bad7">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/P00330"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YOL086C"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="C00022" initialConcentration="1" charge="0" name="pyruvic acid" metaid="_b10b766a_aeb7_47cf_bf95_61d5c78576ed" sboTerm="SBO:0000247" compartment="i">
+<notes><body xmlns="http://www.w3.org/1999/xhtml"><p>CHARGE: 0</p><p>FORMULA: C3H4O3</p><p>SMILES: CC(=O)C(=O)O</p></body></notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_b10b766a_aeb7_47cf_bf95_61d5c78576ed">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:32816"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species id="C00011" initialConcentration="1" charge="0" name="carbon dioxide" metaid="_02d7cd30_f60d_4c47_b5ba_15b97089ae89" sboTerm="SBO:0000247" compartment="i">
+<notes><body xmlns="http://www.w3.org/1999/xhtml"><p>CHARGE: 0</p><p>FORMULA: CO2</p><p>SMILES: O=C=O</p></body></notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_02d7cd30_f60d_4c47_b5ba_15b97089ae89">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:16526"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species id="sce_YBR221C" initialConcentration="1" name="Pyruvate dehydrogenase E1 component subunit beta, mitochondrial" metaid="_b4d89ac8_007a_43e2_90e0_e9c78ffd3a1d" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_b4d89ac8_007a_43e2_90e0_e9c78ffd3a1d">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/P32473"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YBR221C"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="sce_YER178W" initialConcentration="1" name="Pyruvate dehydrogenase E1 component subunit alpha, mitochondrial" metaid="_cd2b04fc_009e_4483_9e32_310d2dd9cbd1" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_cd2b04fc_009e_4483_9e32_310d2dd9cbd1">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/P16387"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YER178W"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="C15972" initialConcentration="1" name="Enzyme N6-(lipoyl)lysine" metaid="_882d653a_95ba_46ee_9ff0_4d64aecb6d43" sboTerm="SBO:0000247" compartment="i">
+<notes><body xmlns="http://www.w3.org/1999/xhtml"><p>FORMULA: C8H14NOS2R</p><p>SMILES: [*]NC(=O)CCCCC1CCSS1</p></body></notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_882d653a_95ba_46ee_9ff0_4d64aecb6d43">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.compound/C15972"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species id="C16255" initialConcentration="1" name="[Dihydrolipoyllysine-residue acetyltransferase] S-acetyldihydrolipoyllysine" metaid="_12555981_d39c_4d48_9f34_d3d7ed20274c" sboTerm="SBO:0000247" compartment="i">
+<notes><body xmlns="http://www.w3.org/1999/xhtml"><p>FORMULA: C10H18NO2S2R</p><p>SMILES: CC(=O)SCCC(S)CCCCC(=O)N[*]</p></body></notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_12555981_d39c_4d48_9f34_d3d7ed20274c">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.compound/C16255"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species id="sce_YNL071W" initialConcentration="1" name="Dihydrolipoyllysine-residue acetyltransferase component of pyruvate dehydrogenase complex, mitochondrial" metaid="_854b55d3_7972_46cd_9c31_548dc6f1dedd" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_854b55d3_7972_46cd_9c31_548dc6f1dedd">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/P12695"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YNL071W"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="C00024" initialConcentration="1" charge="0" name="acetyl-CoA" metaid="_24733525_9436_4207_9440_8ef189a2dcbe" sboTerm="SBO:0000247" compartment="i">
+<notes><body xmlns="http://www.w3.org/1999/xhtml"><p>CHARGE: 0</p><p>FORMULA: C23H38N7O17P3S</p><p>SMILES: CC(=O)SCCNC(=O)CCNC(=O)[C@H](O)C(C)(C)COP(O)(=O)OP(O)(=O)OC[C@H]1O[C@H]([C@H](O)[C@@H]1OP(O)(O)=O)n1cnc2c(N)ncnc12</p></body></notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_24733525_9436_4207_9440_8ef189a2dcbe">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:15351"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species id="C15973" initialConcentration="1" name="Enzyme N6-(dihydrolipoyl)lysine" metaid="_729c6bf0_6465_4868_abbc_2929e5b4e03f" sboTerm="SBO:0000247" compartment="i">
+<notes><body xmlns="http://www.w3.org/1999/xhtml"><p>FORMULA: C8H16NOS2R</p><p>SMILES: SCCC(S)CCCCC(=O)N[*]</p></body></notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_729c6bf0_6465_4868_abbc_2929e5b4e03f">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.compound/C15973"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species id="C00010" initialConcentration="1" charge="0" name="coenzyme A" metaid="_3ebf18ea_5241_47c8_ada8_eda7b7df3f56" sboTerm="SBO:0000247" compartment="i">
+<notes><body xmlns="http://www.w3.org/1999/xhtml"><p>CHARGE: 0</p><p>FORMULA: C21H36N7O16P3S</p><p>SMILES: CC(C)(COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@H]([C@H](O)[C@@H]1OP(=O)(O)O)n2cnc3c(N)ncnc23)[C@@H](O)C(=O)NCCC(=O)NCCS</p></body></notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_3ebf18ea_5241_47c8_ada8_eda7b7df3f56">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:15346"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species id="sce_YAL038W" initialConcentration="1" name="Pyruvate kinase 1" metaid="_661499d9_f8d3_40d8_8fd3_f34cbb65dd40" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_661499d9_f8d3_40d8_8fd3_f34cbb65dd40">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/P00549"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YAL038W"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="sce_YOR347C" initialConcentration="1" name="Pyruvate kinase 2" metaid="_23e91c7c_c5aa_4951_92d5_a51463cb2d8c" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_23e91c7c_c5aa_4951_92d5_a51463cb2d8c">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/P52489"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YOR347C"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="C00002" initialConcentration="1" charge="0" name="ATP" metaid="_ba7f0601_cb9a_4d5b_a909_4424cac8d466" sboTerm="SBO:0000247" compartment="i">
+<notes><body xmlns="http://www.w3.org/1999/xhtml"><p>CHARGE: 0</p><p>FORMULA: C10H16N5O13P3</p><p>SMILES: Nc1ncnc2c1ncn2[C@@H]3O[C@H](COP(=O)(O)OP(=O)(O)OP(=O)(O)O)[C@@H](O)[C@H]3O</p></body></notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_ba7f0601_cb9a_4d5b_a909_4424cac8d466">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:15422"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species id="C00008" initialConcentration="1" charge="0" name="ADP" metaid="_1f7fd844_b7e3_4d4c_bef5_4488d740502c" sboTerm="SBO:0000247" compartment="i">
+<notes><body xmlns="http://www.w3.org/1999/xhtml"><p>CHARGE: 0</p><p>FORMULA: C10H15N5O10P2</p><p>SMILES: Nc1ncnc2c1ncn2[C@@H]3O[C@H](COP(=O)(O)OP(=O)(O)O)[C@@H](O)[C@H]3O</p></body></notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_1f7fd844_b7e3_4d4c_bef5_4488d740502c">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:16761"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species id="C00074" initialConcentration="1" charge="-1" name="phosphoenolpyruvate" metaid="_d06285ec_fe7f_44e4_8359_731dd052ec26" sboTerm="SBO:0000247" compartment="i">
+<notes><body xmlns="http://www.w3.org/1999/xhtml"><p>CHARGE: -1</p><p>FORMULA: C3H4O6P</p><p>SMILES: OP(O)(=O)OC(=C)C([O-])=O</p></body></notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_d06285ec_fe7f_44e4_8359_731dd052ec26">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:18021"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:44897"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species id="sce_YGR254W" initialConcentration="1" name="Enolase 1" metaid="_c26728ad_ea4e_4b3e_ba82_33c502ea2aeb" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_c26728ad_ea4e_4b3e_ba82_33c502ea2aeb">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/P00924"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YGR254W"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="sce_YHR174W" initialConcentration="1" name="Enolase 2" metaid="_9866ab70_1d97_46ff_bf84_fab1ba46314e" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_9866ab70_1d97_46ff_bf84_fab1ba46314e">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/P00925"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YHR174W"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="sce_YMR323W" initialConcentration="1" name="Enolase-related protein 3" metaid="_3994fe5f_7106_4aa0_9212_5a3d6ce6989d" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_3994fe5f_7106_4aa0_9212_5a3d6ce6989d">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/P42222"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YMR323W"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="sce_YOR393W" initialConcentration="1" name="Enolase-related protein 1" metaid="_8be22915_83a8_4424_aa92_fd5d6b08c568" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_8be22915_83a8_4424_aa92_fd5d6b08c568">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/P0CX10"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YOR393W"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="sce_YPL281C" initialConcentration="1" name="Enolase-related protein 2" metaid="_21cafb03_49b2_4420_98ef_4029d025a262" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_21cafb03_49b2_4420_98ef_4029d025a262">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/P0CX11"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YPL281C"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="C00631" initialConcentration="1" charge="0" name="2-phospho-D-glyceric acid" metaid="_18460e00_31bd_4bc1_8d0a_2d4be90336a0" sboTerm="SBO:0000247" compartment="i">
+<notes><body xmlns="http://www.w3.org/1999/xhtml"><p>CHARGE: 0</p><p>FORMULA: C3H7O7P</p><p>SMILES: OC[C@@H](OP(O)(O)=O)C(O)=O</p></body></notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_18460e00_31bd_4bc1_8d0a_2d4be90336a0">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:17835"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species id="sce_YDL021W" initialConcentration="1" name="Phosphoglycerate mutase 2" metaid="_c4973024_fb66_4855_a539_d1fbd4540b3d" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_c4973024_fb66_4855_a539_d1fbd4540b3d">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/Q12008"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YDL021W"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="sce_YKL152C" initialConcentration="1" name="Phosphoglycerate mutase 1" metaid="_897ad6cc_073e_4465_a7bb_f52aee2bb7de" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_897ad6cc_073e_4465_a7bb_f52aee2bb7de">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/P00950"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YKL152C"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="sce_YKR043C" initialConcentration="1" name="Sedoheptulose 1,7-bisphosphatase" metaid="_ac6e2877_282d_49e6_9e9d_66dcf34ebb76" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_ac6e2877_282d_49e6_9e9d_66dcf34ebb76">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/P36136"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YKR043C"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="sce_YOL056W" initialConcentration="1" name="Phosphoglycerate mutase 3" metaid="_53956ad2_1a0e_45b7_9ca8_a069b20e716e" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_53956ad2_1a0e_45b7_9ca8_a069b20e716e">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/Q12326"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YOL056W"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="sce_YOR283W" initialConcentration="1" name="Broad-specificity phosphatase YOR283W" metaid="_c526d962_b90a_48c2_a7f0_752b3727237f" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_c526d962_b90a_48c2_a7f0_752b3727237f">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/Q12040"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YOR283W"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="C00197" initialConcentration="1" charge="0" name="3-phospho-D-glyceric acid" metaid="_2b3dace3_2414_4355_8f10_17995ffeffa0" sboTerm="SBO:0000247" compartment="i">
+<notes><body xmlns="http://www.w3.org/1999/xhtml"><p>CHARGE: 0</p><p>FORMULA: C3H7O7P</p><p>SMILES: O[C@H](COP(=O)(O)O)C(=O)O</p></body></notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_2b3dace3_2414_4355_8f10_17995ffeffa0">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:17794"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species id="sce_YGR192C" initialConcentration="1" name="Glyceraldehyde-3-phosphate dehydrogenase 3" metaid="_c655dfc8_6177_4603_a439_889735654668" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_c655dfc8_6177_4603_a439_889735654668">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/P00359"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YGR192C"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="sce_YJL052W" initialConcentration="1" name="Glyceraldehyde-3-phosphate dehydrogenase 1" metaid="_3c6b17f4_f757_4c27_be09_464cce00e239" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_3c6b17f4_f757_4c27_be09_464cce00e239">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/P00360"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YJL052W"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="sce_YJR009C" initialConcentration="1" name="Glyceraldehyde-3-phosphate dehydrogenase 2" metaid="_bcddea70_a43c_4f24_b743_ee256838a17b" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_bcddea70_a43c_4f24_b743_ee256838a17b">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/P00358"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YJR009C"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="C00009" initialConcentration="1" charge="0" name="phosphoric acid" metaid="_8c7c1d95_bb2e_4f24_b03c_b42a5db2b981" sboTerm="SBO:0000247" compartment="i">
+<notes><body xmlns="http://www.w3.org/1999/xhtml"><p>CHARGE: 0</p><p>FORMULA: H3O4P</p><p>SMILES: OP(=O)(O)O</p></body></notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_8c7c1d95_bb2e_4f24_b03c_b42a5db2b981">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:18367"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:26078"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species id="C00236" initialConcentration="1" charge="0" name="3-phospho-D-glyceroyl dihydrogen phosphate" metaid="_d395faae_e82f_457b_9010_f087ff14385e" sboTerm="SBO:0000247" compartment="i">
+<notes><body xmlns="http://www.w3.org/1999/xhtml"><p>CHARGE: 0</p><p>FORMULA: C3H8O10P2</p><p>SMILES: O[C@H](COP(O)(O)=O)C(=O)OP(O)(O)=O</p></body></notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_d395faae_e82f_457b_9010_f087ff14385e">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:16001"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species id="sce_YDR050C" initialConcentration="1" name="Triosephosphate isomerase" metaid="_7b3fa491_1494_4c6f_9ae9_ac9766a6d40d" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_7b3fa491_1494_4c6f_9ae9_ac9766a6d40d">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/P00942"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YDR050C"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="sce_YGR240C" initialConcentration="1" name="6-phosphofructokinase subunit alpha" metaid="_0c84b884_926b_4d2c_83e4_5555709a170a" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_0c84b884_926b_4d2c_83e4_5555709a170a">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/P16861"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YGR240C"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="sce_YGR240C_2" initialConcentration="1" name="Uncharacterized protein YGR240C-A" metaid="_b9981c9e_c251_4ea5_8299_54b4f78359e9" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_b9981c9e_c251_4ea5_8299_54b4f78359e9">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/Q3E786"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YGR240C"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="sce_YMR205C" initialConcentration="1" name="6-phosphofructokinase subunit beta" metaid="_83927623_0211_4571_aa8d_f36dd5cd649f" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_83927623_0211_4571_aa8d_f36dd5cd649f">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/P16862"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YMR205C"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="C05345" initialConcentration="1" charge="0" name="beta-D-fructofuranose 6-phosphate" metaid="_5521ff0a_739d_4761_be2a_ca5bf1f16736" sboTerm="SBO:0000247" compartment="i">
+<notes><body xmlns="http://www.w3.org/1999/xhtml"><p>CHARGE: 0</p><p>FORMULA: C6H13O9P</p><p>SMILES: OC[C@@]1(O)O[C@H](COP(=O)(O)O)[C@@H](O)[C@@H]1O</p></body></notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_5521ff0a_739d_4761_be2a_ca5bf1f16736">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:16084"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species id="sce_YLR377C" initialConcentration="1" name="Fructose-1,6-bisphosphatase" metaid="_bae78cba_13dd_498d_9156_15506b90365f" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_bae78cba_13dd_498d_9156_15506b90365f">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/P09201"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YLR377C"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="sce_YBR196C" initialConcentration="1" name="Glucose-6-phosphate isomerase" metaid="_6c13c1ca_114d_4244_8a01_0f82331cdbe0" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_6c13c1ca_114d_4244_8a01_0f82331cdbe0">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/P12709"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YBR196C"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="sce_YBR196C_2" initialConcentration="1" name="Uncharacterized protein YBR196C-A" metaid="_3087ccd1_86e8_4d89_9be0_ef401ac7c404" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_3087ccd1_86e8_4d89_9be0_ef401ac7c404">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/Q3E820"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YBR196C"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="sce_YBR196C_3" initialConcentration="1" name="Uncharacterized protein YBR196C-B" metaid="_3af177d9_86c5_4e86_a1cf_72b762c2c1d7" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_3af177d9_86c5_4e86_a1cf_72b762c2c1d7">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/Q3E778"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YBR196C"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="C00668" initialConcentration="1" charge="0" name="alpha-D-glucose 6-phosphate" metaid="_3d10bdc8_3964_4bee_9be8_e8ff1b407e1c" sboTerm="SBO:0000247" compartment="i">
+<notes><body xmlns="http://www.w3.org/1999/xhtml"><p>CHARGE: 0</p><p>FORMULA: C6H13O9P</p><p>SMILES: O[C@H]1O[C@H](COP(O)(O)=O)[C@@H](O)[C@H](O)[C@H]1O</p></body></notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_3d10bdc8_3964_4bee_9be8_e8ff1b407e1c">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:17665"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species id="sce_YKL127W" initialConcentration="1" name="Phosphoglucomutase-1" metaid="_7919431d_b7e0_4164_a43c_ac1ae5411b95" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_7919431d_b7e0_4164_a43c_ac1ae5411b95">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/P33401"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YKL127W"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="sce_YMR105C" initialConcentration="1" name="Phosphoglucomutase-2" metaid="_885b3bca_54b1_40b3_b39f_3acbb0dd4d08" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_885b3bca_54b1_40b3_b39f_3acbb0dd4d08">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/P37012"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YMR105C"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="sce_YMR278W" initialConcentration="1" name="Phosphoglucomutase-3" metaid="_566a788b_5e95_4163_970b_34f782a2b685" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_566a788b_5e95_4163_970b_34f782a2b685">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/Q03262"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YMR278W"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="C00103" initialConcentration="1" charge="0" name="alpha-D-glucose 1-phosphate" metaid="_56c49bd3_b732_4cdb_80e0_459513d95e41" sboTerm="SBO:0000247" compartment="i">
+<notes><body xmlns="http://www.w3.org/1999/xhtml"><p>CHARGE: 0</p><p>FORMULA: C6H13O9P</p><p>SMILES: OC[C@H]1O[C@H](OP(O)(O)=O)[C@H](O)[C@@H](O)[C@@H]1O</p></body></notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_56c49bd3_b732_4cdb_80e0_459513d95e41">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:29042"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species id="C01172" initialConcentration="1" charge="0" name="beta-D-glucose 6-phosphate" metaid="_86b5600f_95f0_4af9_86ba_fa07fa270574" sboTerm="SBO:0000247" compartment="i">
+<notes><body xmlns="http://www.w3.org/1999/xhtml"><p>CHARGE: 0</p><p>FORMULA: C6H13O9P</p><p>SMILES: O[C@@H]1O[C@H](COP(=O)(O)O)[C@@H](O)[C@H](O)[C@H]1O</p></body></notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_86b5600f_95f0_4af9_86ba_fa07fa270574">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:17719"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species id="sce_YCL040W" initialConcentration="1" name="Glucokinase-1" metaid="_67a45050_6829_4d55_99b8_1d428b492c17" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_67a45050_6829_4d55_99b8_1d428b492c17">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/P17709"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YCL040W"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="sce_YFR053C" initialConcentration="1" name="Hexokinase-1" metaid="_8d9d4528_efa4_48be_a0d2_bd5a2c9c5898" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_8d9d4528_efa4_48be_a0d2_bd5a2c9c5898">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/P04806"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YFR053C"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="sce_YGL253W" initialConcentration="1" name="Hexokinase-2" metaid="_fe53bc90_c75b_4f90_881d_d5cb7051be19" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_fe53bc90_c75b_4f90_881d_d5cb7051be19">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/P04807"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YGL253W"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="C00221" initialConcentration="1" charge="0" name="beta-D-glucose" metaid="_bd9c73ee_9f1b_406a_a188_ebf63afcb3d6" sboTerm="SBO:0000247" compartment="i">
+<notes><body xmlns="http://www.w3.org/1999/xhtml"><p>CHARGE: 0</p><p>FORMULA: C6H12O6</p><p>SMILES: OC[C@H]1O[C@@H](O)[C@H](O)[C@@H](O)[C@@H]1O</p></body></notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_bd9c73ee_9f1b_406a_a188_ebf63afcb3d6">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:15903"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species id="sce_YBR019C" initialConcentration="1" name="Bifunctional protein GAL10 [Includes: UDP-glucose 4-epimerase" metaid="_de96e196_1694_46aa_8256_1410c5b4b013" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_de96e196_1694_46aa_8256_1410c5b4b013">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/P04397"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YBR019C"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="C00267" initialConcentration="1" charge="0" name="alpha-D-glucose" metaid="_598aa61d_87aa_4c21_b153_fb794ee1aab6" sboTerm="SBO:0000247" compartment="i">
+<notes><body xmlns="http://www.w3.org/1999/xhtml"><p>CHARGE: 0</p><p>FORMULA: C6H12O6</p><p>SMILES: OC[C@H]1O[C@H](O)[C@H](O)[C@@H](O)[C@@H]1O</p></body></notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_598aa61d_87aa_4c21_b153_fb794ee1aab6">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:17925"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species id="sce_YFL018C" initialConcentration="1" name="Dihydrolipoyl dehydrogenase, mitochondrial" metaid="_3edd6c35_b30f_41e6_a2da_80dcb2b13768" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_3edd6c35_b30f_41e6_a2da_80dcb2b13768">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/P09624"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YFL018C"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="sce_YPL017C" initialConcentration="1" name="Increased recombination centers protein 15" metaid="_a84ccb40_f608_4827_b5a9_c986a3b96972" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_a84ccb40_f608_4827_b5a9_c986a3b96972">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/Q02733"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YPL017C"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="sce_YCR012W" initialConcentration="1" name="Phosphoglycerate kinase" metaid="_cf8fa3c8_b464_4e2c_bf42_7474e4c77be6" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_cf8fa3c8_b464_4e2c_bf42_7474e4c77be6">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/P00560"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YCR012W"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="sce_YKR097W" initialConcentration="1" name="Phosphoenolpyruvate carboxykinase [ATP]" metaid="_727d31a4_682f_4a15_98f4_0148d0c1ef65" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_727d31a4_682f_4a15_98f4_0148d0c1ef65">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/P10963"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YKR097W"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="C00036" initialConcentration="1" charge="0" name="oxaloacetic acid" metaid="_b5dbbf29_5985_443c_8fb9_41638fcd406f" sboTerm="SBO:0000247" compartment="i">
+<notes><body xmlns="http://www.w3.org/1999/xhtml"><p>CHARGE: 0</p><p>FORMULA: C4H4O5</p><p>SMILES: OC(=O)CC(=O)C(O)=O</p></body></notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_b5dbbf29_5985_443c_8fb9_41638fcd406f">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:30744"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species id="sce_YAL054C" initialConcentration="1" name="Acetyl-coenzyme A synthetase 1" metaid="_f8d0e67e_be33_4b38_9ac3_2bd79597812a" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_f8d0e67e_be33_4b38_9ac3_2bd79597812a">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/Q01574"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YAL054C"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="sce_YLR153C" initialConcentration="1" name="Acetyl-coenzyme A synthetase 2" metaid="_633f6422_901b_49d8_ae63_11f9ba5c2941" boundaryCondition="true" sboTerm="SBO:0000252" compartment="i">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_633f6422_901b_49d8_ae63_11f9ba5c2941">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/P52910"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isEncodedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.genes/sce:YLR153C"/>
+                </rdf:Bag>
+              </bqbiol:isEncodedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+</species>
+      <species id="C00020" initialConcentration="1" charge="0" name="AMP" metaid="_c3017051_20c0_4d03_8b1c_a0b891d26083" sboTerm="SBO:0000247" compartment="i">
+<notes><body xmlns="http://www.w3.org/1999/xhtml"><p>CHARGE: 0</p><p>FORMULA: C10H14N5O7P</p><p>SMILES: Nc1ncnc2c1ncn2[C@@H]3O[C@H](COP(=O)(O)O)[C@@H](O)[C@H]3O</p></body></notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_c3017051_20c0_4d03_8b1c_a0b891d26083">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:16027"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species id="C00013" initialConcentration="1" charge="0" name="diphosphoric acid" metaid="_efcd5d22_6841_4fa4_b61a_2aec78aeb36f" sboTerm="SBO:0000247" compartment="i">
+<notes><body xmlns="http://www.w3.org/1999/xhtml"><p>CHARGE: 0</p><p>FORMULA: H4O7P2</p><p>SMILES: OP(=O)(O)OP(=O)(O)O</p></body></notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_efcd5d22_6841_4fa4_b61a_2aec78aeb36f">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:18361"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:29888"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="R01070" name="beta-D-fructose-1,6-bisphosphate D-glyceraldehyde-3-phosphate-lyase (glycerone-phosphate-forming)" metaid="_e97974ad_6ad3_4d15_9564_54a3db0236c6" sboTerm="SBO:0000176">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_e97974ad_6ad3_4d15_9564_54a3db0236c6">
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.reaction/R01070"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isPartOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.pathway/rn00010"/>
+                </rdf:Bag>
+              </bqbiol:isPartOf>
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/ec-code/4.1.2.13"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="C05378"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="C00111"/>
+          <speciesReference species="C00118"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="sce_YKL060C"/>
+        </listOfModifiers>
+      </reaction>
+      <reaction id="R00710" name="Acetaldehyde:NAD+ oxidoreductase" metaid="_d277785f_0255_4662_b533_f8794d660378" sboTerm="SBO:0000176">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_d277785f_0255_4662_b533_f8794d660378">
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.reaction/R00710"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isPartOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.pathway/rn00010"/>
+                </rdf:Bag>
+              </bqbiol:isPartOf>
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/ec-code/1.2.1.3"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="C00084"/>
+          <speciesReference species="C00003"/>
+          <speciesReference species="C00001"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="C00033"/>
+          <speciesReference species="C00004"/>
+          <speciesReference species="C00080"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="sce_YER073W"/>
+          <modifierSpeciesReference species="sce_YOR374W"/>
+          <modifierSpeciesReference species="sce_YPL061W"/>
+        </listOfModifiers>
+      </reaction>
+      <reaction id="R00711" name="Acetaldehyde:NADP+ oxidoreductase" metaid="_a7906436_6d9c_45ff_8c76_22506f1b22bd" sboTerm="SBO:0000176">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_a7906436_6d9c_45ff_8c76_22506f1b22bd">
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.reaction/R00711"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isPartOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.pathway/rn00010"/>
+                </rdf:Bag>
+              </bqbiol:isPartOf>
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/ec-code/1.2.1.4"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="C00084"/>
+          <speciesReference species="C00006"/>
+          <speciesReference species="C00001"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="C00033"/>
+          <speciesReference species="C00005"/>
+          <speciesReference species="C00080"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="sce_YMR169C"/>
+          <modifierSpeciesReference species="sce_YMR170C"/>
+        </listOfModifiers>
+      </reaction>
+      <reaction id="R00755" name="R00755" metaid="_f01c2943_f264_4dcb_b95e_a966d7dbd0a4" reversible="false" sboTerm="SBO:0000176">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_f01c2943_f264_4dcb_b95e_a966d7dbd0a4">
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.reaction/R00755"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isPartOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.pathway/rn00010"/>
+                </rdf:Bag>
+              </bqbiol:isPartOf>
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/ec-code/4.1.1.1"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="C05125" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="C00084" stoichiometry="1"/>
+          <speciesReference species="C00068" stoichiometry="1"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="sce_YDL080C"/>
+          <modifierSpeciesReference species="sce_YGR087C"/>
+          <modifierSpeciesReference species="sce_YLR044C"/>
+          <modifierSpeciesReference species="sce_YLR134W"/>
+        </listOfModifiers>
+      </reaction>
+      <reaction id="R00746" name="Ethanol:NADP+ oxidoreductase" metaid="_26b1d4f7_05b9_4376_8409_6094a1bca429" sboTerm="SBO:0000176">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_26b1d4f7_05b9_4376_8409_6094a1bca429">
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.reaction/R00746"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isPartOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.pathway/rn00010"/>
+                </rdf:Bag>
+              </bqbiol:isPartOf>
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/ec-code/1.1.1.2"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="C00469"/>
+          <speciesReference species="C00006"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="C00084"/>
+          <speciesReference species="C00005"/>
+          <speciesReference species="C00080"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="sce_YCR105W"/>
+          <modifierSpeciesReference species="sce_YMR318C"/>
+        </listOfModifiers>
+      </reaction>
+      <reaction id="R00754" name="ethanol:NAD+ oxidoreductase" metaid="_dfdac415_5631_4963_974c_465a65692c8b" sboTerm="SBO:0000176">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_dfdac415_5631_4963_974c_465a65692c8b">
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.reaction/R00754"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isPartOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.pathway/rn00010"/>
+                </rdf:Bag>
+              </bqbiol:isPartOf>
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/ec-code/1.1.1.1"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="C00469"/>
+          <speciesReference species="C00003"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="C00084"/>
+          <speciesReference species="C00004"/>
+          <speciesReference species="C00080"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="sce_YBR145W"/>
+          <modifierSpeciesReference species="sce_YDL168W"/>
+          <modifierSpeciesReference species="sce_YGL256W"/>
+          <modifierSpeciesReference species="sce_YMR083W"/>
+          <modifierSpeciesReference species="sce_YMR303C"/>
+          <modifierSpeciesReference species="sce_YOL086C"/>
+        </listOfModifiers>
+      </reaction>
+      <reaction id="R00014" name="pyruvate:thiamin diphosphate acetaldehydetransferase (decarboxylating)" metaid="_1ac9c189_1cc3_47ee_875d_86cc231d86b9" reversible="false" sboTerm="SBO:0000176">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_1ac9c189_1cc3_47ee_875d_86cc231d86b9">
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.reaction/R00014"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isPartOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.pathway/rn00010"/>
+                </rdf:Bag>
+              </bqbiol:isPartOf>
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/ec-code/4.1.1.1"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="C00022"/>
+          <speciesReference species="C00068"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="C05125"/>
+          <speciesReference species="C00011"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="sce_YDL080C"/>
+          <modifierSpeciesReference species="sce_YGR087C"/>
+          <modifierSpeciesReference species="sce_YLR044C"/>
+          <modifierSpeciesReference species="sce_YLR134W"/>
+        </listOfModifiers>
+      </reaction>
+      <reaction id="R03270" name="R03270" metaid="_b011120b_ac1f_41ad_9c38_3f0ec068ef1b" reversible="false" sboTerm="SBO:0000176">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_b011120b_ac1f_41ad_9c38_3f0ec068ef1b">
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.reaction/R03270"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isPartOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.pathway/rn00010"/>
+                </rdf:Bag>
+              </bqbiol:isPartOf>
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/ec-code/1.2.4.1"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="C05125"/>
+          <speciesReference species="C15972"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="C16255"/>
+          <speciesReference species="C00068"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="sce_YBR221C"/>
+          <modifierSpeciesReference species="sce_YER178W"/>
+        </listOfModifiers>
+      </reaction>
+      <reaction id="R02569" name="acetyl-CoA:enzyme N6-(dihydrolipoyl)lysine S-acetyltransferase" metaid="_271bd5a3_399f_4c40_9045_1297c7314147" sboTerm="SBO:0000176">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_271bd5a3_399f_4c40_9045_1297c7314147">
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.reaction/R02569"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isPartOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.pathway/rn00010"/>
+                </rdf:Bag>
+              </bqbiol:isPartOf>
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/ec-code/2.3.1.12"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="C00024"/>
+          <speciesReference species="C15973"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="C00010"/>
+          <speciesReference species="C16255"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="sce_YNL071W"/>
+        </listOfModifiers>
+      </reaction>
+      <reaction id="R00200" name="ATP:pyruvate 2-O-phosphotransferase" metaid="_65005051_3dfe_4be1_a5a3_5e10cbe3970f" reversible="false" sboTerm="SBO:0000176">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_65005051_3dfe_4be1_a5a3_5e10cbe3970f">
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.reaction/R00200"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isPartOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.pathway/rn00010"/>
+                </rdf:Bag>
+              </bqbiol:isPartOf>
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/ec-code/2.7.1.40"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="C00008" stoichiometry="1"/>
+          <speciesReference species="C00074" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="C00002" stoichiometry="1"/>
+          <speciesReference species="C00022" stoichiometry="1"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="sce_YAL038W"/>
+          <modifierSpeciesReference species="sce_YOR347C"/>
+        </listOfModifiers>
+      </reaction>
+      <reaction id="R00658" name="2-phospho-D-glycerate hydro-lyase (phosphoenolpyruvate-forming)" metaid="_4aaf4a01_02aa_44c2_8aba_64878019f2c7" sboTerm="SBO:0000176">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_4aaf4a01_02aa_44c2_8aba_64878019f2c7">
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.reaction/R00658"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isPartOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.pathway/rn00010"/>
+                </rdf:Bag>
+              </bqbiol:isPartOf>
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/ec-code/4.2.1.11"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="C00631"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="C00074"/>
+          <speciesReference species="C00001"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="sce_YGR254W"/>
+          <modifierSpeciesReference species="sce_YHR174W"/>
+          <modifierSpeciesReference species="sce_YMR323W"/>
+          <modifierSpeciesReference species="sce_YOR393W"/>
+          <modifierSpeciesReference species="sce_YPL281C"/>
+        </listOfModifiers>
+      </reaction>
+      <reaction id="R01518" name="2-Phospho-D-glycerate 2,3-phosphomutase" metaid="_97ed2017_f251_4dc2_bc6c_133929e1178d" sboTerm="SBO:0000176">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_97ed2017_f251_4dc2_bc6c_133929e1178d">
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.reaction/R01518"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isPartOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.pathway/rn00010"/>
+                </rdf:Bag>
+              </bqbiol:isPartOf>
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/ec-code/5.4.2.1"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="C00631"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="C00197"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="sce_YDL021W"/>
+          <modifierSpeciesReference species="sce_YKL152C"/>
+          <modifierSpeciesReference species="sce_YKR043C"/>
+          <modifierSpeciesReference species="sce_YOL056W"/>
+          <modifierSpeciesReference species="sce_YOR283W"/>
+        </listOfModifiers>
+      </reaction>
+      <reaction id="R01061" name="D-glyceraldehyde-3-phosphate:NAD+ oxidoreductase (phosphorylating)" metaid="_966000a3_0aac_4882_b32e_be0a053c203b" sboTerm="SBO:0000176">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_966000a3_0aac_4882_b32e_be0a053c203b">
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.reaction/R01061"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isPartOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.pathway/rn00010"/>
+                </rdf:Bag>
+              </bqbiol:isPartOf>
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/ec-code/1.2.1.59"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="C00118"/>
+          <speciesReference species="C00009"/>
+          <speciesReference species="C00003"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="C00236"/>
+          <speciesReference species="C00004"/>
+          <speciesReference species="C00080"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="sce_YGR192C"/>
+          <modifierSpeciesReference species="sce_YJL052W"/>
+          <modifierSpeciesReference species="sce_YJR009C"/>
+        </listOfModifiers>
+      </reaction>
+      <reaction id="R01015" name="D-glyceraldehyde-3-phosphate aldose-ketose-isomerase" metaid="_b0500422_d23f_4466_b2ec_18a8bbd56a8e" sboTerm="SBO:0000176">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_b0500422_d23f_4466_b2ec_18a8bbd56a8e">
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.reaction/R01015"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isPartOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.pathway/rn00010"/>
+                </rdf:Bag>
+              </bqbiol:isPartOf>
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/ec-code/5.3.1.1"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="C00118"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="C00111"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="sce_YDR050C"/>
+        </listOfModifiers>
+      </reaction>
+      <reaction id="R04779" name="ATP:D-fructose-6-phosphate 1-phosphotransferase" metaid="_7d5af1fa_49be_4328_9de3_b21c63a94796" reversible="false" sboTerm="SBO:0000176">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_7d5af1fa_49be_4328_9de3_b21c63a94796">
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.reaction/R04779"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isPartOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.pathway/rn00010"/>
+                </rdf:Bag>
+              </bqbiol:isPartOf>
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/ec-code/2.7.1.11"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="C00002"/>
+          <speciesReference species="C05345"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="C00008"/>
+          <speciesReference species="C05378"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="sce_YGR240C"/>
+          <modifierSpeciesReference species="sce_YGR240C_2"/>
+          <modifierSpeciesReference species="sce_YMR205C"/>
+        </listOfModifiers>
+      </reaction>
+      <reaction id="R04780" name="beta-D-Fructose 1,6-bisphosphate 1-phosphohydrolase" metaid="_c57a8e05_eaac_49ac_86b8_7dad4ecb3dc8" reversible="false" sboTerm="SBO:0000176">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_c57a8e05_eaac_49ac_86b8_7dad4ecb3dc8">
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.reaction/R04780"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isPartOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.pathway/rn00010"/>
+                </rdf:Bag>
+              </bqbiol:isPartOf>
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/ec-code/3.1.3.11"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="C05378"/>
+          <speciesReference species="C00001"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="C05345"/>
+          <speciesReference species="C00009"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="sce_YLR377C"/>
+        </listOfModifiers>
+      </reaction>
+      <reaction id="R02740" name="alpha-D-Glucose 6-phosphate ketol-isomerase" metaid="_6951b523_bc4d_43a1_b621_0576b31f8561" sboTerm="SBO:0000176">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_6951b523_bc4d_43a1_b621_0576b31f8561">
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.reaction/R02740"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isPartOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.pathway/rn00010"/>
+                </rdf:Bag>
+              </bqbiol:isPartOf>
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/ec-code/5.3.1.9"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="C00668"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="C05345"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="sce_YBR196C"/>
+          <modifierSpeciesReference species="sce_YBR196C_2"/>
+          <modifierSpeciesReference species="sce_YBR196C_3"/>
+        </listOfModifiers>
+      </reaction>
+      <reaction id="R00959" name="alpha-D-Glucose 1-phosphate 1,6-phosphomutase" metaid="_d52c8c34_f3a6_412a_9312_2b5abe4c0f4c" sboTerm="SBO:0000176">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_d52c8c34_f3a6_412a_9312_2b5abe4c0f4c">
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.reaction/R00959"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isPartOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.pathway/rn00010"/>
+                </rdf:Bag>
+              </bqbiol:isPartOf>
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/ec-code/5.4.2.5"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="C00103"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="C00668"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="sce_YKL127W"/>
+          <modifierSpeciesReference species="sce_YMR105C"/>
+          <modifierSpeciesReference species="sce_YMR278W"/>
+        </listOfModifiers>
+      </reaction>
+      <reaction id="R03321" name="beta-D-Glucose 6-phosphate ketol-isomerase" metaid="_e39360c7_17ec_4bb5_9a2a_88eb0c576ef5" sboTerm="SBO:0000176">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_e39360c7_17ec_4bb5_9a2a_88eb0c576ef5">
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.reaction/R03321"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isPartOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.pathway/rn00010"/>
+                </rdf:Bag>
+              </bqbiol:isPartOf>
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/ec-code/5.3.1.9"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="C01172"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="C05345"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="sce_YBR196C"/>
+        </listOfModifiers>
+      </reaction>
+      <reaction id="R01600" name="ATP:beta-D-glucose 6-phosphotransferase" metaid="_f8a4f06a_fc52_4991_852c_159d900acb47" reversible="false" sboTerm="SBO:0000176">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_f8a4f06a_fc52_4991_852c_159d900acb47">
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.reaction/R01600"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isPartOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.pathway/rn00010"/>
+                </rdf:Bag>
+              </bqbiol:isPartOf>
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/ec-code/2.7.1.1"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="C00002"/>
+          <speciesReference species="C00221"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="C00008"/>
+          <speciesReference species="C01172"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="sce_YCL040W"/>
+          <modifierSpeciesReference species="sce_YFR053C"/>
+          <modifierSpeciesReference species="sce_YGL253W"/>
+        </listOfModifiers>
+      </reaction>
+      <reaction id="R02739" name="alpha-D-Glucose 6-phosphate ketol-isomerase" metaid="_fa55c7c7_a288_4019_90b4_951cedba09ff" sboTerm="SBO:0000176">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_fa55c7c7_a288_4019_90b4_951cedba09ff">
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.reaction/R02739"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isPartOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.pathway/rn00010"/>
+                </rdf:Bag>
+              </bqbiol:isPartOf>
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/ec-code/5.3.1.9"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="C00668"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="C01172"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="sce_YBR196C"/>
+        </listOfModifiers>
+      </reaction>
+      <reaction id="R01602" name="D-glucose 1-epimerase" metaid="_240ca327_a4b5_4393_8cc1_dc644b2f106c" sboTerm="SBO:0000176">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_240ca327_a4b5_4393_8cc1_dc644b2f106c">
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.reaction/R01602"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isPartOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.pathway/rn00010"/>
+                </rdf:Bag>
+              </bqbiol:isPartOf>
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/ec-code/5.1.3.3"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="C00267"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="C00221"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="sce_YBR019C"/>
+        </listOfModifiers>
+      </reaction>
+      <reaction id="R01786" name="ATP:alpha-D-glucose 6-phosphotransferase" metaid="_35a9e184_d196_4974_91d7_92c44b635fb7" reversible="false" sboTerm="SBO:0000176">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_35a9e184_d196_4974_91d7_92c44b635fb7">
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.reaction/R01786"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isPartOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.pathway/rn00010"/>
+                </rdf:Bag>
+              </bqbiol:isPartOf>
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/ec-code/2.7.1.1"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="C00002"/>
+          <speciesReference species="C00267"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="C00008"/>
+          <speciesReference species="C00668"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="sce_YCL040W"/>
+          <modifierSpeciesReference species="sce_YFR053C"/>
+          <modifierSpeciesReference species="sce_YGL253W"/>
+        </listOfModifiers>
+      </reaction>
+      <reaction id="R07618" name="enzyme N6-(dihydrolipoyl)lysine:NAD+ oxidoreductase" metaid="_c53900f6_d59a_4d92_8435_00d3114c975e" sboTerm="SBO:0000176">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_c53900f6_d59a_4d92_8435_00d3114c975e">
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.reaction/R07618"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isPartOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.pathway/rn00010"/>
+                </rdf:Bag>
+              </bqbiol:isPartOf>
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/ec-code/1.8.1.4"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="C15973"/>
+          <speciesReference species="C00003"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="C15972"/>
+          <speciesReference species="C00004"/>
+          <speciesReference species="C00080"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="sce_YFL018C"/>
+          <modifierSpeciesReference species="sce_YPL017C"/>
+        </listOfModifiers>
+      </reaction>
+      <reaction id="R01512" name="ATP:3-phospho-D-glycerate 1-phosphotransferase" metaid="_1569fe00_6dd7_4e93_a3a4_931dda7b2971" sboTerm="SBO:0000176">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_1569fe00_6dd7_4e93_a3a4_931dda7b2971">
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.reaction/R01512"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isPartOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.pathway/rn00010"/>
+                </rdf:Bag>
+              </bqbiol:isPartOf>
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/ec-code/2.7.2.3"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="C00002"/>
+          <speciesReference species="C00197"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="C00008"/>
+          <speciesReference species="C00236"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="sce_YCR012W"/>
+        </listOfModifiers>
+      </reaction>
+      <reaction id="R00341" name="ATP:oxaloacetate carboxy-lyase (transphosphorylatingphosphoenolpyruvate-forming)" metaid="_a7983daf_2003_47ae_8383_14a8a394bc0e" reversible="false" sboTerm="SBO:0000176">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_a7983daf_2003_47ae_8383_14a8a394bc0e">
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.reaction/R00341"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isPartOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.pathway/rn00010"/>
+                </rdf:Bag>
+              </bqbiol:isPartOf>
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/ec-code/4.1.1.49"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="C00002"/>
+          <speciesReference species="C00036"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="C00008"/>
+          <speciesReference species="C00074"/>
+          <speciesReference species="C00011"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="sce_YKR097W"/>
+        </listOfModifiers>
+      </reaction>
+      <reaction id="R00235" name="Acetate:CoA ligase (AMP-forming)" metaid="_1529e03d_27e5_49e6_acce_01ad7acc65ae" reversible="false" sboTerm="SBO:0000176">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#_1529e03d_27e5_49e6_acce_01ad7acc65ae">
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9847135"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.reaction/R00235"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isPartOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/kegg.pathway/rn00010"/>
+                </rdf:Bag>
+              </bqbiol:isPartOf>
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/ec-code/6.2.1.1"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="C00002"/>
+          <speciesReference species="C00033"/>
+          <speciesReference species="C00010"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="C00020"/>
+          <speciesReference species="C00013"/>
+          <speciesReference species="C00024"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="sce_YAL054C"/>
+          <modifierSpeciesReference species="sce_YLR153C"/>
+        </listOfModifiers>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

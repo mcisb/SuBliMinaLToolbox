@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level2/version4" level="2" version="4">
+   <model>
+      <listOfUnitDefinitions>
+         <unitDefinition id="flux_unit">
+            <listOfUnits>
+               <unit kind="mole"/>
+               <unit exponent="-1" kind="second"/>
+            </listOfUnits>
+         </unitDefinition>
+         <unitDefinition id="dimensionless_base" name="Base unit dimensionless">
+            <listOfUnits>
+               <unit scale="0"
+                     exponent="1"
+                     metaid="c1a5dd28-9ee4-42cb-83ec-1c54ae647387"
+                     multiplier="1"
+                     kind="dimensionless">
+                  <annotation>
+                     <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                              xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+                        <rdf:Description rdf:about="#c1a5dd28-9ee4-42cb-83ec-1c54ae647387">
+                           <bqbiol:is>
+                              <rdf:Bag>
+                                 <rdf:li rdf:resource="http://identifiers.org/unit/UO:0000186"/>
+                              </rdf:Bag>
+                           </bqbiol:is>
+                        </rdf:Description>
+                     </rdf:RDF>
+                  </annotation>
+               </unit>
+            </listOfUnits>
+         </unitDefinition>
+      </listOfUnitDefinitions>
+      <listOfCompartments>
+         <compartment id="c"
+                      name="cytoplasm"
+                      metaid="meta_c"
+                      sboTerm="SBO:0000290"
+                      size="1">
+            <annotation>
+               <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                        xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+                  <rdf:Description rdf:about="#meta_c">
+                     <bqbiol:is>
+                        <rdf:Bag>
+                           <rdf:li rdf:resource="http://identifiers.org/go/GO:0005737"/>
+                        </rdf:Bag>
+                     </bqbiol:is>
+                  </rdf:Description>
+               </rdf:RDF>
+            </annotation>
+         </compartment>
+      </listOfCompartments>
+      <listOfSpecies>
+         <species id="M_h2o_c"
+                  initialConcentration="0"
+                  name="H2O"
+                  metaid="meta_M_h2o_c"
+                  sboTerm="SBO:0000247"
+                  compartment="c">
+            <notes>
+               <body xmlns="http://www.w3.org/1999/xhtml">
+                  <p>FORMULA: H2O</p>
+                  <p>CHARGE: 0</p>
+                  <p>HEPATONET:</p>
+                  <p>EHMN:</p>
+                  <p>INCHI: InChI=1S/H2O/h1H2</p>
+                  <p>CARBONS: 0</p>
+               </body>
+            </notes>
+            <annotation>
+               <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                        xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+                  <rdf:Description rdf:about="#meta_M_h2o_c">
+                     <bqbiol:is>
+                        <rdf:Bag>
+                           <rdf:li rdf:resource="http://identifiers.org/kegg.compound/C00001"/>
+                           <rdf:li rdf:resource="http://identifiers.org/pubchem.substance/3303"/>
+                           <rdf:li rdf:resource="http://identifiers.org/hmdb/HMDB02111"/>
+                        </rdf:Bag>
+                     </bqbiol:is>
+                  </rdf:Description>
+               </rdf:RDF>
+            </annotation>
+         </species>
+         <species id="M_dag_hs_c"
+                  initialConcentration="0"
+                  name="diglyceride"
+                  metaid="meta_M_dag_hs_c"
+                  sboTerm="SBO:0000247"
+                  compartment="c">
+            <notes>
+               <body xmlns="http://www.w3.org/1999/xhtml">
+                  <p>FORMULA: C35H68O5</p>
+                  <p>CHARGE: 0</p>
+                  <p>HEPATONET:</p>
+                  <p>EHMN:</p>
+                  <p>INCHI:</p>
+                  <p>CARBONS: 35</p>
+               </body>
+            </notes>
+            <annotation>
+               <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                        xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+                  <rdf:Description rdf:about="#meta_M_dag_hs_c">
+                     <bqbiol:is>
+                        <rdf:Bag>
+                           <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:18035"/>
+                        </rdf:Bag>
+                     </bqbiol:is>
+                  </rdf:Description>
+               </rdf:RDF>
+            </annotation>
+         </species>
+         <species id="M_h_c"
+                  initialConcentration="0"
+                  name="proton"
+                  metaid="meta_M_h_c"
+                  sboTerm="SBO:0000247"
+                  compartment="c">
+            <notes>
+               <body xmlns="http://www.w3.org/1999/xhtml">
+                  <p>FORMULA: H</p>
+                  <p>CHARGE: 1</p>
+                  <p>HEPATONET:</p>
+                  <p>EHMN:</p>
+                  <p>INCHI: InChI=1S/p+1/i/hH</p>
+                  <p>CARBONS: 0</p>
+               </body>
+            </notes>
+            <annotation>
+               <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                        xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+                  <rdf:Description rdf:about="#meta_M_h_c">
+                     <bqbiol:is>
+                        <rdf:Bag>
+                           <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:24636"/>
+                           <rdf:li rdf:resource="http://identifiers.org/kegg.compound/C00080"/>
+                           <rdf:li rdf:resource="http://identifiers.org/pubchem.substance/3380"/>
+                        </rdf:Bag>
+                     </bqbiol:is>
+                  </rdf:Description>
+               </rdf:RDF>
+            </annotation>
+         </species>
+         <species id="M_Rtotal_c"
+                  initialConcentration="0"
+                  name="R total"
+                  sboTerm="SBO:0000247"
+                  compartment="c">
+            <notes>
+               <body xmlns="http://www.w3.org/1999/xhtml">
+                  <p>FORMULA: C16H31O2</p>
+                  <p>CHARGE: -1</p>
+                  <p>HEPATONET:</p>
+                  <p>EHMN:</p>
+                  <p>INCHI:</p>
+                  <p>CARBONS: 16</p>
+               </body>
+            </notes>
+         </species>
+         <species id="M_mag_hs_c"
+                  initialConcentration="0"
+                  name="monoacylglycerol 2"
+                  sboTerm="SBO:0000247"
+                  compartment="c">
+            <notes>
+               <body xmlns="http://www.w3.org/1999/xhtml">
+                  <p>FORMULA: C3H7O2FULLR2CO2</p>
+                  <p>CHARGE: 0</p>
+                  <p>HEPATONET:</p>
+                  <p>EHMN:</p>
+                  <p>INCHI:</p>
+                  <p>CARBONS: 19</p>
+               </body>
+            </notes>
+         </species>
+         <species id="E_4023_c"
+                  initialConcentration="0"
+                  name="4023"
+                  metaid="meta_E_4023_c"
+                  boundaryCondition="true"
+                  sboTerm="SBO:0000252"
+                  compartment="c">
+            <notes>
+               <body xmlns="http://www.w3.org/1999/xhtml">
+                  <p>FORMULA:</p>
+                  <p>CHARGE:</p>
+                  <p>HEPATONET:</p>
+                  <p>EHMN:</p>
+                  <p>INCHI:</p>
+                  <p>CARBONS:</p>
+               </body>
+            </notes>
+            <annotation>
+               <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                        xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+                  <rdf:Description rdf:about="#meta_E_4023_c">
+                     <bqbiol:isEncodedBy>
+                        <rdf:Bag>
+                           <rdf:li rdf:resource="http://identifiers.org/kegg.genes/hsa:4023"/>
+                        </rdf:Bag>
+                     </bqbiol:isEncodedBy>
+                  </rdf:Description>
+               </rdf:RDF>
+            </annotation>
+         </species>
+      </listOfSpecies>
+      <listOfReactions>
+         <reaction id="R_LPS2"
+                   name="lipase"
+                   metaid="meta_R_LPS2"
+                   reversible="false"
+                   sboTerm="SBO:0000176">
+            <notes>
+               <body xmlns="http://www.w3.org/1999/xhtml">
+                  <p>GENE_ASSOCIATION: 4023</p>
+                  <p>SUBSYSTEM: Triacylglycerol synthesis</p>
+                  <p>CONFIDENCE_LEVEL: 4</p>
+                  <p>NOTES: FULLR corresponds to acyl/R groups in texts. NJ</p>
+               </body>
+            </notes>
+            <annotation>
+               <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                        xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+                  <rdf:Description rdf:about="#meta_R_LPS2">
+                     <bqbiol:isVersionOf>
+                        <rdf:Bag>
+                           <rdf:li rdf:resource="http://identifiers.org/eco/ECO:0000000"/>
+                           <rdf:li rdf:resource="http://identifiers.org/ec-code/3.1.1.3"/>
+                        </rdf:Bag>
+                     </bqbiol:isVersionOf>
+                     <bqbiol:isDescribedBy>
+                        <rdf:Bag>
+                           <rdf:li rdf:resource="http://identifiers.org/pubmed/1969408"/>
+                        </rdf:Bag>
+                     </bqbiol:isDescribedBy>
+                  </rdf:Description>
+               </rdf:RDF>
+            </annotation>
+            <listOfReactants>
+               <speciesReference species="M_h2o_c"/>
+               <speciesReference species="M_dag_hs_c"/>
+            </listOfReactants>
+            <listOfProducts>
+               <speciesReference species="M_h_c"/>
+               <speciesReference species="M_Rtotal_c"/>
+               <speciesReference species="M_mag_hs_c"/>
+            </listOfProducts>
+            <listOfModifiers>
+               <modifierSpeciesReference species="E_4023_c"/>
+            </listOfModifiers>
+            <kineticLaw>
+               <math xmlns="http://www.w3.org/1998/Math/MathML">
+                  <ci> FLUX_VALUE </ci>
+               </math>
+               <listOfParameters>
+                  <parameter id="LOWER_BOUND" value="0" units="flux_unit"/>
+                  <parameter id="UPPER_BOUND" value="INF" units="flux_unit"/>
+                  <parameter id="FLUX_VALUE" value="0" units="flux_unit"/>
+                  <parameter id="OBJECTIVE_COEFFICIENT" value="0" units="dimensionless"/>
+               </listOfParameters>
+            </kineticLaw>
+         </reaction>
+      </listOfReactions>
+   </model>
+</sbml>
