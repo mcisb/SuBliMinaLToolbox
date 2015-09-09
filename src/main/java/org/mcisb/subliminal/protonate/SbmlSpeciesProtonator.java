@@ -14,12 +14,12 @@ package org.mcisb.subliminal.protonate;
 import java.io.*;
 import java.util.*;
 import org.mcisb.ontology.*;
-import org.mcisb.ontology.chebi.*;
+// import org.mcisb.ontology.chebi.*;
 import org.mcisb.ontology.sbo.*;
 import org.mcisb.sbml.*;
 import org.mcisb.subliminal.model.*;
 import org.mcisb.util.*;
-import org.mcisb.util.chem.*;
+// import org.mcisb.util.chem.*;
 import org.sbml.jsbml.*;
 
 /**
@@ -35,17 +35,17 @@ public class SbmlSpeciesProtonator
 	/**
 	 * 
 	 */
-	private static final String R = "R"; //$NON-NLS-1$
+	// private static final String R = "R"; //$NON-NLS-1$
 
 	/**
 	 * 
 	 */
-	private static final String EMPTY_STRING = ""; //$NON-NLS-1$
+	// private static final String EMPTY_STRING = ""; //$NON-NLS-1$
 
 	/**
 	 * 
 	 */
-	private static final String R_GROUP_REGEX = "(?=.*)\\[\\*\\](?=.*)"; //$NON-NLS-1$
+	// private static final String R_GROUP_REGEX = "(?=.*)\\[\\*\\](?=.*)"; //$NON-NLS-1$
 
 	/**
 	 * 
@@ -55,7 +55,7 @@ public class SbmlSpeciesProtonator
 	/**
 	 * 
 	 */
-	private final Map<Float,Map<String,Object[]>> pHtoSmilesToProtonatedFormulaAndCharge = new TreeMap<>();
+	// private final Map<Float,Map<String,Object[]>> pHtoSmilesToProtonatedFormulaAndCharge = new TreeMap<>();
 
 	/**
 	 * @param pH
@@ -103,8 +103,8 @@ public class SbmlSpeciesProtonator
 	 */
 	public void run( final File inFile, final File outFile ) throws Exception
 	{
-		final int FORMULA = 0;
-		final int CHARGE = 1;
+		// final int FORMULA = 0;
+		// final int CHARGE = 1;
 
 		final SBMLDocument document = SBMLReader.read( inFile );
 		final Model model = document.getModel();
@@ -135,6 +135,7 @@ public class SbmlSpeciesProtonator
 						pH = goTermTopH.get( DEFAULT ).floatValue();
 					}
 
+					/*
 					final String smiles = SbmlUtils.getSmiles( model, species );
 
 					if( smiles != null && !smiles.equals( "[H+]" ) && !smiles.equals( "[1H+]" ) ) //$NON-NLS-1$ //$NON-NLS-2$
@@ -160,6 +161,7 @@ public class SbmlSpeciesProtonator
 							}
 						}
 					}
+					*/
 				}
 				catch( FileNotFoundException e )
 				{
@@ -183,6 +185,7 @@ public class SbmlSpeciesProtonator
 	 * @return Object[]
 	 * @throws Exception
 	 */
+	/*
 	private Object[] getProtonatedFormulaAndCharge( final float pH, final String smiles ) throws Exception
 	{
 		final MajorMicrospeciesPlugin plugin = new MajorMicrospeciesPlugin();
@@ -213,6 +216,7 @@ public class SbmlSpeciesProtonator
 
 		return protonatedFormulaAndCharge;
 	}
+	*/
 
 	/**
 	 * 
@@ -223,6 +227,7 @@ public class SbmlSpeciesProtonator
 	 * @param species
 	 * @throws Exception
 	 */
+	/*
 	private static void checkAnnotation( final boolean isBase, final ChebiTerm chebiTerm, final int protonatedCharge, final String protonatedFormula, final Species species ) throws Exception
 	{
 		for( Map.Entry<ChebiTerm,String> childEntry : chebiTerm.getChildren().entrySet() )
@@ -262,6 +267,7 @@ public class SbmlSpeciesProtonator
 			}
 		}
 	}
+	*/
 
 	/**
 	 * @param args

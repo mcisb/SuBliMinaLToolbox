@@ -13,6 +13,7 @@ package org.mcisb.subliminal.balance;
 
 import java.io.*;
 import java.util.*;
+
 import org.mcisb.ontology.sbo.*;
 import org.mcisb.sbml.*;
 import org.mcisb.subliminal.model.*;
@@ -122,6 +123,7 @@ public class SbmlReactionBalancerTask
 	 * @return SBMLDocument
 	 * @throws Exception
 	 */
+	@SuppressWarnings("unchecked")
 	public SBMLDocument run() throws Exception
 	{
 		final Model model = document.getModel();

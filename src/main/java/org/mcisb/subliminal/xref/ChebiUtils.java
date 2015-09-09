@@ -5,7 +5,7 @@ package org.mcisb.subliminal.xref;
 
 import java.io.*;
 import java.text.*;
-import libchebi.*;
+import uk.co.synbiochem.libchebi.*;
 
 /**
  * @author neilswainston

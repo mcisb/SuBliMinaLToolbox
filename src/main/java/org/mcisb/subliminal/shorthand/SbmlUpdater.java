@@ -198,7 +198,7 @@ public class SbmlUpdater
 					SbmlUtils.setCharge( species, DEFAULT_CHARGE );
 				}
 			}
-			catch( libchebi.ChebiException e )
+			catch( uk.co.synbiochem.libchebi.ChebiException e )
 			{
 				e.printStackTrace();
 			}
@@ -498,7 +498,7 @@ public class SbmlUpdater
 					}
 				}
 			}
-			catch( libchebi.ChebiException e )
+			catch( uk.co.synbiochem.libchebi.ChebiException e )
 			{
 				e.printStackTrace();
 				species.unsetAnnotation();
