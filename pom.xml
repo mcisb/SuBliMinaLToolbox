@@ -133,6 +133,16 @@
 		<url>http://rsync.xypron.de/repository</url>
 		<layout>default</layout>
 	</repository>
+	<repository>
+	  <id>snapshots-repo</id>
+	  <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+	  <releases>
+	    <enabled>false</enabled>
+	  </releases>
+	  <snapshots>
+	    <enabled>true</enabled>
+	  </snapshots>
+	</repository>
   </repositories>
   
   <dependencies>
