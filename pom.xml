@@ -2,8 +2,119 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.mcisb</groupId>
   <artifactId>subliminal-toolbox</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
   <name>SuBliMinaLToolbox</name>
+  <description>SuBliMinaLToolbox</description>
+  <url>https://github.com/mcisb/SuBliMinaLToolbox</url>
+  
+  <licenses>
+    <license>
+      <name>MIT License</name>
+      <url>http://www.opensource.org/licenses/mit-license.php</url>
+    </license>
+  </licenses>
+  
+  <scm>
+    <url>https://github.com/mcisb/SuBliMinaLToolbox</url>
+    <connection>scm:git:https://github.com/mcisb/SuBliMinaLToolbox.git</connection>
+    <developerConnection>scm:git:https://github.com/mcisb/SuBliMinaLToolbox.git</developerConnection>
+  </scm>
+
+  <developers>
+    <developer>
+      <email>neil.swainston@manchester.ac.uk</email>
+      <name>Neil Swainston</name>
+      <url>https://github.com/neilswainston</url>
+      <id>neilswainston</id>
+    </developer>
+  </developers>
+  
+  <organization>
+    <name>MCISB</name>
+    <url>http://www.mcisb.org</url>
+  </organization>
+  
+  <properties>
+  	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  
+  <distributionManagement>
+    <snapshotRepository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+    </snapshotRepository>
+    <repository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+    </repository>
+  </distributionManagement>
+  
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.1</version>
+        <configuration>
+          <source>1.7</source>
+          <target>1.7</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-source-plugin</artifactId>
+        <version>2.2.1</version>
+        <executions>
+          <execution>
+            <id>attach-sources</id>
+            <goals>
+              <goal>jar-no-fork</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>2.9.1</version>
+        <executions>
+          <execution>
+            <id>attach-javadocs</id>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-gpg-plugin</artifactId>
+        <version>1.5</version>
+        <executions>
+          <execution>
+            <id>sign-artifacts</id>
+            <phase>verify</phase>
+            <goals>
+              <goal>sign</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.sonatype.plugins</groupId>
+        <artifactId>nexus-staging-maven-plugin</artifactId>
+        <version>1.6.3</version>
+        <extensions>true</extensions>
+        <configuration>
+          <serverId>ossrh</serverId>
+          <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+          <autoReleaseAfterClose>true</autoReleaseAfterClose>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  
   <repositories>
   	<repository>
   		<id>ebi-repo</id>
@@ -23,27 +134,22 @@
 		<layout>default</layout>
 	</repository>
   </repositories>
+  
   <dependencies>
  	<dependency>
-	    <groupId>mcisb</groupId>
+	    <groupId>org.mcisb</groupId>
 	    <artifactId>mcisb-core</artifactId>
-	    <version>-SNAPSHOT</version>
-	    <systemPath>/Users/neilswainston/git/mcisb-core/target/mcisb-core-0.0.1-SNAPSHOT.jar</systemPath>
-	    <scope>system</scope>
+	    <version>1.0.0-SNAPSHOT</version>
  	</dependency>
  	<dependency>
 	    <groupId>uk.co.synbiochem</groupId>
 	    <artifactId>libChEBIj</artifactId>
-	    <version>-SNAPSHOT</version>
-	    <systemPath>/Users/neilswainston/git/libChEBIj/target/libChEBIj-0.0.1-SNAPSHOT.jar</systemPath>
-	    <scope>system</scope>
+	    <version>1.0.0</version>
  	</dependency>
  	<dependency>
-	    <groupId>mcisb</groupId>
+	    <groupId>org.mcisb</groupId>
 	    <artifactId>libAnnotationSBML</artifactId>
-	    <version>-SNAPSHOT</version>
-	    <systemPath>/Users/neilswainston/git/libAnnotationSBML/target/libAnnotationSBML-0.0.1-SNAPSHOT.jar</systemPath>
-	    <scope>system</scope>
+	    <version>1.0.0-SNAPSHOT</version>
  	</dependency>
   	<dependency>
   		<groupId>junit</groupId>
@@ -71,8 +177,5 @@
 		<version>1.1.0</version>
 	</dependency>
   </dependencies>
-  <organization>
-  	<name>MCISB</name>
-  	<url>http://www.mcisb.org</url>
-  </organization>
+
 </project>
