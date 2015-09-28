@@ -154,7 +154,6 @@ public class SbmlFactory
 	 * @throws NumberFormatException
 	 * @throws ChebiException
 	 */
-	@SuppressWarnings("deprecation")
 	public Species getSpecies( final String id, final String compartment ) throws IOException, XMLStreamException, NumberFormatException, ParseException, ChebiException
 	{
 		final String mxnRefId = chemUtils.getMxnRefId( id );
@@ -182,7 +181,6 @@ public class SbmlFactory
 				if( charge != SubliminalUtils.UNDEFINED_NUMBER )
 				{
 					notes.put( SubliminalUtils.CHARGE, Integer.valueOf( charge ) );
-					species.setCharge( charge );
 				}
 
 				notes.put( SubliminalUtils.INCHI, chemUtils.getInchi( mxnRefId ) );

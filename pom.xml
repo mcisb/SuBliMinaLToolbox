@@ -161,26 +161,6 @@
 	    <artifactId>libAnnotationSBML</artifactId>
 	    <version>1.0.0-SNAPSHOT</version>
  	</dependency>
-  	<dependency>
-  		<groupId>junit</groupId>
-  		<artifactId>junit</artifactId>
-  		<version>RELEASE</version>
-  	</dependency>
-	<dependency>
-		<groupId>org.apache.commons</groupId>
-		<artifactId>commons-compress</artifactId>
-		<version>RELEASE</version>
-	</dependency>
-  	<dependency>
-  		<groupId>org.apache.commons</groupId>
-  		<artifactId>commons-lang3</artifactId>
-  		<version>RELEASE</version>
-  	</dependency>
-  	<dependency>
-  		<groupId>org.sbml.jsbml</groupId>
-  		<artifactId>core</artifactId>
-  		<version>RELEASE</version>
-  	</dependency>
 	<dependency>
 		<groupId>org.gnu.glpk</groupId>
 		<artifactId>glpk-java</artifactId>

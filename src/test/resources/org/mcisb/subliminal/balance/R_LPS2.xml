@@ -59,14 +59,14 @@
                   sboTerm="SBO:0000247"
                   compartment="c">
             <notes>
-               <body xmlns="http://www.w3.org/1999/xhtml">
-                  <p>FORMULA: H2O</p>
-                  <p>CHARGE: 0</p>
-                  <p>HEPATONET:</p>
-                  <p>EHMN:</p>
-                  <p>INCHI: InChI=1S/H2O/h1H2</p>
-                  <p>CARBONS: 0</p>
-               </body>
+               <html:body xmlns:html="http://www.w3.org/1999/xhtml">
+                  <html:p>FORMULA: H2O</html:p>
+                  <html:p>CHARGE: 0</html:p>
+                  <html:p>HEPATONET:</html:p>
+                  <html:p>EHMN:</html:p>
+                  <html:p>INCHI: InChI=1S/H2O/h1H2</html:p>
+                  <html:p>CARBONS: 0</html:p>
+               </html:body>
             </notes>
             <annotation>
                <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -90,14 +90,14 @@
                   sboTerm="SBO:0000247"
                   compartment="c">
             <notes>
-               <body xmlns="http://www.w3.org/1999/xhtml">
-                  <p>FORMULA: C35H68O5</p>
-                  <p>CHARGE: 0</p>
-                  <p>HEPATONET:</p>
-                  <p>EHMN:</p>
-                  <p>INCHI:</p>
-                  <p>CARBONS: 35</p>
-               </body>
+               <html:body xmlns:html="http://www.w3.org/1999/xhtml">
+                  <html:p>FORMULA: C35H68O5</html:p>
+                  <html:p>CHARGE: 0</html:p>
+                  <html:p>HEPATONET:</html:p>
+                  <html:p>EHMN:</html:p>
+                  <html:p>INCHI:</html:p>
+                  <html:p>CARBONS: 35</html:p>
+               </html:body>
             </notes>
             <annotation>
                <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -119,14 +119,14 @@
                   sboTerm="SBO:0000247"
                   compartment="c">
             <notes>
-               <body xmlns="http://www.w3.org/1999/xhtml">
-                  <p>FORMULA: H</p>
-                  <p>CHARGE: 1</p>
-                  <p>HEPATONET:</p>
-                  <p>EHMN:</p>
-                  <p>INCHI: InChI=1S/p+1/i/hH</p>
-                  <p>CARBONS: 0</p>
-               </body>
+               <html:body xmlns:html="http://www.w3.org/1999/xhtml">
+                  <html:p>FORMULA: H</html:p>
+                  <html:p>CHARGE: 1</html:p>
+                  <html:p>HEPATONET:</html:p>
+                  <html:p>EHMN:</html:p>
+                  <html:p>INCHI: InChI=1S/p+1/i/hH</html:p>
+                  <html:p>CARBONS: 0</html:p>
+               </html:body>
             </notes>
             <annotation>
                <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -149,14 +149,14 @@
                   sboTerm="SBO:0000247"
                   compartment="c">
             <notes>
-               <body xmlns="http://www.w3.org/1999/xhtml">
-                  <p>FORMULA: C16H31O2</p>
-                  <p>CHARGE: -1</p>
-                  <p>HEPATONET:</p>
-                  <p>EHMN:</p>
-                  <p>INCHI:</p>
-                  <p>CARBONS: 16</p>
-               </body>
+               <html:body xmlns:html="http://www.w3.org/1999/xhtml">
+                  <html:p>FORMULA: C16H31O2</html:p>
+                  <html:p>CHARGE: -1</html:p>
+                  <html:p>HEPATONET:</html:p>
+                  <html:p>EHMN:</html:p>
+                  <html:p>INCHI:</html:p>
+                  <html:p>CARBONS: 16</html:p>
+               </html:body>
             </notes>
          </species>
          <species id="M_mag_hs_c"
@@ -165,14 +165,14 @@
                   sboTerm="SBO:0000247"
                   compartment="c">
             <notes>
-               <body xmlns="http://www.w3.org/1999/xhtml">
-                  <p>FORMULA: C3H7O2FULLR2CO2</p>
-                  <p>CHARGE: 0</p>
-                  <p>HEPATONET:</p>
-                  <p>EHMN:</p>
-                  <p>INCHI:</p>
-                  <p>CARBONS: 19</p>
-               </body>
+               <html:body xmlns:html="http://www.w3.org/1999/xhtml">
+                  <html:p>FORMULA: C3H7O2FULLR2CO2</html:p>
+                  <html:p>CHARGE: 0</html:p>
+                  <html:p>HEPATONET:</html:p>
+                  <html:p>EHMN:</html:p>
+                  <html:p>INCHI:</html:p>
+                  <html:p>CARBONS: 19</html:p>
+               </html:body>
             </notes>
          </species>
          <species id="E_4023_c"
@@ -183,14 +183,14 @@
                   sboTerm="SBO:0000252"
                   compartment="c">
             <notes>
-               <body xmlns="http://www.w3.org/1999/xhtml">
-                  <p>FORMULA:</p>
-                  <p>CHARGE:</p>
-                  <p>HEPATONET:</p>
-                  <p>EHMN:</p>
-                  <p>INCHI:</p>
-                  <p>CARBONS:</p>
-               </body>
+               <html:body xmlns:html="http://www.w3.org/1999/xhtml">
+                  <html:p>FORMULA:</html:p>
+                  <html:p>CHARGE:</html:p>
+                  <html:p>HEPATONET:</html:p>
+                  <html:p>EHMN:</html:p>
+                  <html:p>INCHI:</html:p>
+                  <html:p>CARBONS:</html:p>
+               </html:body>
             </notes>
             <annotation>
                <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -213,12 +213,12 @@
                    reversible="false"
                    sboTerm="SBO:0000176">
             <notes>
-               <body xmlns="http://www.w3.org/1999/xhtml">
-                  <p>GENE_ASSOCIATION: 4023</p>
-                  <p>SUBSYSTEM: Triacylglycerol synthesis</p>
-                  <p>CONFIDENCE_LEVEL: 4</p>
-                  <p>NOTES: FULLR corresponds to acyl/R groups in texts. NJ</p>
-               </body>
+               <html:body xmlns:html="http://www.w3.org/1999/xhtml">
+                  <html:p>GENE_ASSOCIATION: 4023</html:p>
+                  <html:p>SUBSYSTEM: Triacylglycerol synthesis</html:p>
+                  <html:p>CONFIDENCE_LEVEL: 4</html:p>
+                  <html:p>NOTES: FULLR corresponds to acyl/R groups in texts. NJ</html:p>
+               </html:body>
             </notes>
             <annotation>
                <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"

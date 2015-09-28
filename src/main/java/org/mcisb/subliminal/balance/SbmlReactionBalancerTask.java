@@ -78,6 +78,18 @@ public class SbmlReactionBalancerTask
 	{
 		this( SBMLReader.read( inFile ), outFile, maxStoichiometricCoefficient );
 	}
+	
+	/**
+	 * 
+	 * @param is
+	 * @param outFile
+	 * @param maxStoichiometricCoefficient
+	 * @throws Exception
+	 */
+	public SbmlReactionBalancerTask( final InputStream is, final File outFile, final int maxStoichiometricCoefficient ) throws Exception
+	{
+		this( SBMLReader.read( is ), outFile, maxStoichiometricCoefficient );
+	}
 
 	/**
 	 * 

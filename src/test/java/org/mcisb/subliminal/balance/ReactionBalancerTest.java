@@ -75,6 +75,7 @@ public class ReactionBalancerTest
 	public void balanceFractional() throws Exception
 	{
 		final SBMLDocument document = new SBMLDocument( 2, 4 );
+		document.setNamespace("http://www.w3.org/1999/xhtml"); //$NON-NLS-1$
 		final Model model = document.createModel();
 
 		final Compartment compartment = model.createCompartment();

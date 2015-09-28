@@ -22,15 +22,9 @@ public class SbmlReactionBalancerTaskTest
 	public void balance() throws Exception
 	{
 		final int MAX_STOICHIOMETRIC_COEFFICIENT = 8;
-		final File in = File.createTempFile( "inFile", ".xml" ); //$NON-NLS-1$ //$NON-NLS-2$
 		final File out = File.createTempFile( "outFile", ".xml" ); //$NON-NLS-1$ //$NON-NLS-2$
 
-		try ( final OutputStream os = new FileOutputStream( in ) )
-		{
-			new StreamReader( getClass().getClassLoader().getResourceAsStream( "org/mcisb/subliminal/balance/balance.xml" ), os ).read(); //$NON-NLS-1$
-		}
-
-		new SbmlReactionBalancerTask( in, out, MAX_STOICHIOMETRIC_COEFFICIENT ).run();
+		new SbmlReactionBalancerTask( getClass().getClassLoader().getResourceAsStream( "org/mcisb/subliminal/balance/balance.xml" ), out, MAX_STOICHIOMETRIC_COEFFICIENT ).run(); //$NON-NLS-1$
 
 		final SBMLDocument document = SBMLReader.read( out );
 		final Model model = document.getModel();

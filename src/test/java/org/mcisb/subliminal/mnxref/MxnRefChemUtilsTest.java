@@ -34,7 +34,7 @@ public class MxnRefChemUtilsTest
 	{
 		Assert.assertTrue( MxnRefChemUtils.getInstance().getName( "MNXM400" ).equals( "creatine" ) ); //$NON-NLS-1$ //$NON-NLS-2$
 		Assert.assertTrue( MxnRefChemUtils.getInstance().getName( "bigg:creat" ).equals( "creatine" ) ); //$NON-NLS-1$ //$NON-NLS-2$
-		Assert.assertTrue( MxnRefChemUtils.getInstance().getName( "MNXM9247" ).equals( "__ factor" ) ); //$NON-NLS-1$ //$NON-NLS-2$
+		Assert.assertTrue( MxnRefChemUtils.getInstance().getName( "MNXM9247" ).equals( "WHWLQLKPGQPMY" ) ); //$NON-NLS-1$ //$NON-NLS-2$
 	}
 
 	/**
