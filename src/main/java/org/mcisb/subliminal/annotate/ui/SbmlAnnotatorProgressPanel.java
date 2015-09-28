@@ -130,7 +130,7 @@ public class SbmlAnnotatorProgressPanel extends TextProgressPanel implements Cha
 	 * )
 	 */
 	@Override
-	public void stateChanged( @SuppressWarnings("unused") final ChangeEvent event )
+	public void stateChanged( final ChangeEvent event )
 	{
 		firePropertyChange( SbmlAnnotator.SILENT, !silentCheckBox.isSelected(), silentCheckBox.isSelected() );
 	}
