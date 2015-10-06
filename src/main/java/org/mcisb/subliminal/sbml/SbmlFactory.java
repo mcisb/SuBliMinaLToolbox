@@ -5,7 +5,7 @@ import java.net.*;
 import java.text.*;
 import java.util.*;
 import javax.xml.stream.*;
-import uk.co.synbiochem.libchebi.*;
+import uk.ac.manchester.libchebi.*;
 import org.mcisb.subliminal.*;
 import org.mcisb.subliminal.mnxref.*;
 import org.mcisb.subliminal.xref.*;
