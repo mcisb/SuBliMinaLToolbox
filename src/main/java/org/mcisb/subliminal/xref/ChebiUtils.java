@@ -24,6 +24,6 @@ public class ChebiUtils
 	 */
 	public static synchronized boolean isPrimary( final String id ) throws IOException, NumberFormatException, ParseException, ChebiException
 	{
-		return new ChebiEntity( Integer.parseInt( id ) ).getParentId() == ChebiEntity.UNDEFINED_VALUE;
+		return new ChebiEntity( id ).getParentId() == ChebiEntity.UNDEFINED_VALUE;
 	}
 }
