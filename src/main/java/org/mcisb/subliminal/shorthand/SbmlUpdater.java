@@ -652,6 +652,64 @@ public class SbmlUpdater
 
 		reaction.setReversible( false );
 	}
+	
+	/**
+	 * 
+	 * @param reaction
+	 */
+	public static void flipExchangeReactions( final Model model )
+	{
+		final String BOUNDARY = "b"; //$NON-NLS-1$
+		
+		for( Reaction reaction : model.getListOfReactions() )
+		{
+			final Collection<SpeciesReference> newProducts = new ArrayList<>( reaction.getListOfReactants() );
+			final Collection<SpeciesReference> newReactants = new ArrayList<>( reaction.getListOfProducts() );
+			boolean isExchangeReaction = false;
+			
+			for( SpeciesReference ref : newReactants )
+			{
+				if( model.getSpecies( ref.getSpecies() ).getCompartment().equals( BOUNDARY ) )
+				{
+					isExchangeReaction = true;
+				}
+			}
+	
+			for( SpeciesReference ref : newProducts )
+			{
+				if( model.getSpecies( ref.getSpecies() ).getCompartment().equals( BOUNDARY ) )
+				{
+					isExchangeReaction = true;
+				}
+			}
+			
+			if( isExchangeReaction )
+			{
+				System.out.println( reaction.getId() );
+				reaction.unsetListOfReactants();
+				reaction.unsetListOfProducts();
+		
+				for( SpeciesReference ref : newReactants )
+				{
+					reaction.addReactant( ref.clone() );
+				}
+		
+				for( SpeciesReference ref : newProducts )
+				{
+					reaction.addProduct( ref.clone() );
+				}
+		
+				final LocalParameter lowerBound = FluxBoundsGenerater.getLocalParameter( reaction, FluxBoundsGenerater.LOWER_BOUND );
+				final LocalParameter upperBound = FluxBoundsGenerater.getLocalParameter( reaction, FluxBoundsGenerater.UPPER_BOUND );
+				final double newLowerBound = upperBound.getValue() == 0.0 ? 0.0 : -1 * upperBound.getValue();
+						
+				upperBound.setValue( lowerBound.getValue() == 0.0 ? 0.0 : -1 * lowerBound.getValue() );
+				lowerBound.setValue( newLowerBound );
+		
+				reaction.setReversible( !reaction.isSetReversible() || reaction.isReversible() );
+			}
+		}
+	}
 
 	/**
 	 * 
