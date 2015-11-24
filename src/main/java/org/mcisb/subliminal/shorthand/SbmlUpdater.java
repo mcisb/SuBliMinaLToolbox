@@ -37,11 +37,6 @@ public class SbmlUpdater
 {
 	/**
 	 * 
-	 */
-	// private static final int REPLACEMENT_SPECIES_REF_ID = 2;
-
-	/**
-	 * 
 	 * @param model
 	 * @throws Exception
 	 */
@@ -685,7 +680,6 @@ public class SbmlUpdater
 			
 			if( isExchangeReaction )
 			{
-				System.out.println( reaction.getId() );
 				reaction.unsetListOfReactants();
 				reaction.unsetListOfProducts();
 		

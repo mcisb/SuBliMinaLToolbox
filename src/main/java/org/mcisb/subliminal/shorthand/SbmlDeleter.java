@@ -33,11 +33,11 @@ public class SbmlDeleter
 	/**
 	 * 
 	 * @param document
+	 * @param maxStoichCoeff
 	 * @throws Exception
 	 */
-	public static void clean( final SBMLDocument document ) throws Exception
+	public static void clean( final SBMLDocument document, final int maxStoichCoeff ) throws Exception
 	{
-		final int MAX_STOICHIOMETRIC_COEFFICENT = 12;
 		final Model model = document.getModel();
 		float proportionBalanced = 0;
 
@@ -45,7 +45,7 @@ public class SbmlDeleter
 		{
 			final Collection<String> speciesIdsToRemove = new HashSet<>();
 
-			final SbmlReactionBalancerTask task = new SbmlReactionBalancerTask( document, null, MAX_STOICHIOMETRIC_COEFFICENT );
+			final SbmlReactionBalancerTask task = new SbmlReactionBalancerTask( document, null, maxStoichCoeff );
 			task.run();
 
 			final Map<String,Integer> metaboliteDegree = SbmlUtils.getMetaboliteDegree( model, true );
@@ -60,7 +60,6 @@ public class SbmlDeleter
 				if( problematicReactions == allReactions && problematicReactions == 1 )
 				{
 					speciesIdsToRemove.add( speciesId );
-					// System.out.println( speciesId + "\t" + model.getSpecies( speciesId ).getName() ); //$NON-NLS-1$
 				}
 			}
 
