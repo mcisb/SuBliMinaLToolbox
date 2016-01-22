@@ -257,15 +257,7 @@ public class SbmlUpdater
 	 */
 	public static void updateReversibilities( final Model model, final File reversibilities ) throws Exception
 	{
-		final Map<String,Boolean> reversibilitiesMapBoolean = new LinkedHashMap<>();
-		final Map<String,String> reversibilitiesMapString = FileUtils.readMap( reversibilities );
-
-		for( Map.Entry<String,String> entry : reversibilitiesMapString.entrySet() )
-		{
-			reversibilitiesMapBoolean.put( entry.getKey(), Boolean.valueOf( entry.getValue() ) );
-		}
-
-		updateReversibilities( model, reversibilitiesMapBoolean );
+		updateReversibilities( model, FileUtils.readMap( reversibilities ) );
 	}
 
 	/**
@@ -273,15 +265,37 @@ public class SbmlUpdater
 	 * @param model
 	 * @param reversibilities
 	 */
-	public static void updateReversibilities( final Model model, final Map<String,Boolean> reversibilities )
+	public static void updateReversibilities( final Model model, final Map<String,String> reversibilities )
 	{
-		for( Map.Entry<String,Boolean> entry : reversibilities.entrySet() )
+		for( Map.Entry<String,String> entry : reversibilities.entrySet() )
 		{
 			for( Reaction reaction : model.getListOfReactions() )
 			{
 				if( reaction.getId().matches( entry.getKey() ) )
 				{
-					updateReversibility( reaction, entry.getValue().booleanValue() );
+					switch( entry.getValue().toLowerCase() )
+					{
+						case "true": //$NON-NLS-1$
+						{
+							updateReversibility( reaction, true );
+							break;
+						}
+						case "false": //$NON-NLS-1$
+						{
+							updateReversibility( reaction, false );
+							break;
+						}
+						case "reverse": //$NON-NLS-1$
+						{
+							reverse( reaction );
+							break;
+						}
+						default:
+						{
+							// Take no action.
+						}
+					}
+					
 				}
 			}
 		}
@@ -641,68 +655,12 @@ public class SbmlUpdater
 
 		final LocalParameter lowerBound = FluxBoundsGenerater.getLocalParameter( reaction, FluxBoundsGenerater.LOWER_BOUND );
 		final LocalParameter upperBound = FluxBoundsGenerater.getLocalParameter( reaction, FluxBoundsGenerater.UPPER_BOUND );
+		final double newLowerBound = upperBound.getValue() == 0.0 ? 0.0 : -1 * upperBound.getValue();
+				
+		upperBound.setValue( lowerBound.getValue() == 0.0 ? 0.0 : -1 * lowerBound.getValue() );
+		lowerBound.setValue( newLowerBound );
 
-		upperBound.setValue( -1 * lowerBound.getValue() );
-		lowerBound.setValue( FluxBoundsGenerater.ZERO_FLUX );
-
-		reaction.setReversible( false );
-	}
-	
-	/**
-	 * 
-	 * @param reaction
-	 */
-	public static void flipExchangeReactions( final Model model )
-	{
-		final String BOUNDARY = "b"; //$NON-NLS-1$
-		
-		for( Reaction reaction : model.getListOfReactions() )
-		{
-			final Collection<SpeciesReference> newProducts = new ArrayList<>( reaction.getListOfReactants() );
-			final Collection<SpeciesReference> newReactants = new ArrayList<>( reaction.getListOfProducts() );
-			boolean isExchangeReaction = false;
-			
-			for( SpeciesReference ref : newReactants )
-			{
-				if( model.getSpecies( ref.getSpecies() ).getCompartment().equals( BOUNDARY ) )
-				{
-					isExchangeReaction = true;
-				}
-			}
-	
-			for( SpeciesReference ref : newProducts )
-			{
-				if( model.getSpecies( ref.getSpecies() ).getCompartment().equals( BOUNDARY ) )
-				{
-					isExchangeReaction = true;
-				}
-			}
-			
-			if( isExchangeReaction )
-			{
-				reaction.unsetListOfReactants();
-				reaction.unsetListOfProducts();
-		
-				for( SpeciesReference ref : newReactants )
-				{
-					reaction.addReactant( ref.clone() );
-				}
-		
-				for( SpeciesReference ref : newProducts )
-				{
-					reaction.addProduct( ref.clone() );
-				}
-		
-				final LocalParameter lowerBound = FluxBoundsGenerater.getLocalParameter( reaction, FluxBoundsGenerater.LOWER_BOUND );
-				final LocalParameter upperBound = FluxBoundsGenerater.getLocalParameter( reaction, FluxBoundsGenerater.UPPER_BOUND );
-				final double newLowerBound = upperBound.getValue() == 0.0 ? 0.0 : -1 * upperBound.getValue();
-						
-				upperBound.setValue( lowerBound.getValue() == 0.0 ? 0.0 : -1 * lowerBound.getValue() );
-				lowerBound.setValue( newLowerBound );
-		
-				reaction.setReversible( !reaction.isSetReversible() || reaction.isReversible() );
-			}
-		}
+		reaction.setReversible( !reaction.isSetReversible() || reaction.isReversible() );
 	}
 
 	/**
