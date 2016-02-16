@@ -164,6 +164,7 @@ public class SbmlReactionBalancerTask
 							for( String speciesId : (Collection<String>)balanceReturnValue[ SbmlReactionBalancer.UPDATED_SPECIES ] )
 							{
 								SbmlUtils.set( model.getSpecies( speciesId ), SbmlUtils.NON_SPECIFIC_FORMULA, speciesIdToOriginalFormula.get( speciesId ) );
+								// System.out.println( reaction.getId() + "\t" + speciesId + "\t" + SbmlUtils.getFormula( model, model.getSpecies( speciesId ) ) + "\t" + speciesIdToOriginalFormula.get( speciesId ) ); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
 								updatedSpecies = true;
 							}
 						}
@@ -182,6 +183,7 @@ public class SbmlReactionBalancerTask
 									for( String speciesId : (Collection<String>)balanceReturnValueResetStoichiometry[ SbmlReactionBalancer.UPDATED_SPECIES ] )
 									{
 										SbmlUtils.set( model.getSpecies( speciesId ), SbmlUtils.NON_SPECIFIC_FORMULA, speciesIdToOriginalFormula.get( speciesId ) );
+										// System.out.println( reaction.getId() + "\t" + speciesId + "\t" + SbmlUtils.getFormula( model, model.getSpecies( speciesId ) ) + "\t" + speciesIdToOriginalFormula.get( speciesId ) ); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
 										updatedSpecies = true;
 									}
 								}
@@ -254,7 +256,7 @@ public class SbmlReactionBalancerTask
 			final int problematicReactions = entry.getValue().intValue();
 			final int allReactions = metaboliteDegree.get( speciesId ).intValue();
 
-			System.out.println( speciesId + TAB + species.getName() + TAB + SbmlUtils.getFormula( model, species ) + TAB + problematicReactions + TAB + ( (float)problematicReactions / allReactions * 100 ) + "%" ); //$NON-NLS-1$
+			System.out.println( speciesId + TAB + species.getName() + TAB + SbmlUtils.getFormula( model, species ) + TAB + SbmlUtils.getNotes( species ).get( "NON_SPECIFIC_FORMULA" ) + TAB + problematicReactions + TAB + ( (float)problematicReactions / allReactions * 100 ) + "%" ); //$NON-NLS-1$ //$NON-NLS-2$
 		}
 	}
 
@@ -354,7 +356,7 @@ public class SbmlReactionBalancerTask
 				return speciesIdToOriginalFormula;
 			}
 
-			final int rGroupCount = formula.get( Formula.R_GROUP ) + ( formula.getRepeatingUnits().contains( Formula.R_GROUP_EXPANSION ) ? 1 : 0 );
+			final int rGroupCount = formula.get( Formula.R_GROUP );
 
 			if( rGroupCount > 0 )
 			{
@@ -375,7 +377,7 @@ public class SbmlReactionBalancerTask
 				return speciesIdToOriginalFormula;
 			}
 
-			final int rGroupCount = formula.get( Formula.R_GROUP ) + ( formula.getRepeatingUnits().contains( Formula.R_GROUP_EXPANSION ) ? 1 : 0 );
+			final int rGroupCount = formula.get( Formula.R_GROUP );
 
 			if( rGroupCount > 0 )
 			{
@@ -394,16 +396,15 @@ public class SbmlReactionBalancerTask
 			for( Map.Entry<Species,Integer> entry : rGroupSpecies.entrySet() )
 			{
 				final Species species = entry.getKey();
-				final Formula formula = speciesIdToOriginalFormula.get( species.getId() );
+				final Formula formula = Formula.getFormula( speciesIdToOriginalFormula.get( species.getId() ).toString() );
 				Formula.replace( formula, Formula.R_GROUP, Formula.R_GROUP_EXPANSION, entry.getValue().intValue() - Math.min( reactantRgroups, productRgroups ) );
-				// Formula.replace( formula, R_GROUP, rGroupExpansion );
 				SbmlUtils.setFormula( species, formula.toString() );
 			}
 		}
 
 		return speciesIdToOriginalFormula;
 	}
-
+	
 	/**
 	 * @param args
 	 * @throws Exception
