@@ -682,7 +682,7 @@ public class SbmlUpdater
 	 */
 	public static void updateSpeciesIds( final Model model, final Map<String,String> speciesIds )
 	{
-		updateIds( model.getListOfSpecies(), speciesIds );
+		updateIds( model.getListOfSpecies(), speciesIds, true );
 
 		for( Map.Entry<String,String> entry : speciesIds.entrySet() )
 		{
@@ -716,7 +716,7 @@ public class SbmlUpdater
 	 */
 	public static void updateReactionIds( final Model model, final File file ) throws FileNotFoundException, IOException
 	{
-		updateIds( model.getListOfReactions(), FileUtils.readMap( file ) );
+		updateIds( model.getListOfReactions(), FileUtils.readMap( file ), false );
 	}
 
 	/**
@@ -746,18 +746,33 @@ public class SbmlUpdater
 	/**
 	 * 
 	 * @param list
-	 * @param speciesIds
+	 * @param ids
+	 * @param regex
 	 */
-	private static void updateIds( final ListOf<? extends NamedSBase> list, final Map<String,String> ids )
+	private static void updateIds( final ListOf<? extends NamedSBase> list, final Map<String,String> ids, final boolean regex )
 	{
 		for( Map.Entry<String,String> entry : ids.entrySet() )
 		{
-			final String regExpId = entry.getKey();
-			final Pattern pattern = Pattern.compile( regExpId );
-
-			for( NamedSBase sbase : list )
+			final String id = entry.getKey();
+			
+			if( regex )
 			{
-				sbase.setId( pattern.matcher( sbase.getId() ).replaceAll( entry.getValue() ) );
+				final Pattern pattern = Pattern.compile( id );
+	
+				for( NamedSBase sbase : list )
+				{
+					sbase.setId( pattern.matcher( sbase.getId() ).replaceAll( entry.getValue() ) );
+				}
+			}
+			else
+			{
+				for( NamedSBase sbase : list )
+				{
+					if( sbase.getId().equals( id ) )
+					{
+						sbase.setId( entry.getValue() );
+					}
+				}
 			}
 		}
 	}
