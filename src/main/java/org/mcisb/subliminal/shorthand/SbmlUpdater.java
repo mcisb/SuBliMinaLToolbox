@@ -101,8 +101,7 @@ public class SbmlUpdater
 				}
 				else if( originalSpeciesFormula != null && Formula.match( chebiTermFormula, originalSpeciesFormula, false ) && chebiTermCharge == speciesCharge )
 				{
-					// Full match to original non-specific formula: update
-					// qualifier.
+					// Full match to original non-specific formula: update qualifier.
 					addOntologyTerms( species, chebiTerm, inchiTerm, Qualifier.BQB_IS_VERSION_OF );
 					System.out.println( "UPDATE ANNOTATION: " + species.getId() + "\t" + chebiTerm.toUri() + "\t" + chebiTermFormula + "\t" + speciesFormula ); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$ //$NON-NLS-4$
 				}
@@ -140,25 +139,35 @@ public class SbmlUpdater
 	 * @param model
 	 * @throws Exception
 	 */
-	public static void checkAnnotationConsistency( final Model model ) throws Exception
+	public static void checkSpeciesConsistency( final Model model ) throws Exception
 	{
+		final Map<String,String> speciesIdStemToName = new HashMap<>();
 		final Map<String,String> speciesIdStemToNotes = new HashMap<>();
 		final Map<String,Map<OntologyTerm,Object[]>> speciesIdStemToAnnotations = new HashMap<>();
 
 		for( Species species : model.getListOfSpecies() )
 		{
 			final String speciesIdStem = species.getId().substring( 0, species.getId().lastIndexOf( '_' ) );
+			final String existingName = speciesIdStemToName.get( speciesIdStem );
 			final String existingNotes = speciesIdStemToNotes.get( speciesIdStem );
 			final Map<OntologyTerm,Object[]> existingAnnotations = speciesIdStemToAnnotations.get( speciesIdStem );
 			final Map<OntologyTerm,Object[]> annotations = SbmlUtils.getOntologyTerms( species );
 
+			if( existingName == null )
+			{
+				speciesIdStemToName.put( speciesIdStem, species.getName() );
+			}
+			else if( !existingName.equals( species.getName() ) )
+			{
+				species.setName( existingName );
+			}
+			
 			if( existingNotes == null )
 			{
 				speciesIdStemToNotes.put( speciesIdStem, species.getNotesString() );
 			}
 			else if( !existingNotes.equals( species.getNotesString() ) )
 			{
-				// System.out.println( species.getId() + "\t" + existingNotes + "\n" + species.getNotesString() ); //$NON-NLS-1$ //$NON-NLS-2$
 				species.setNotes( existingNotes );
 			}
 
@@ -168,7 +177,6 @@ public class SbmlUpdater
 			}
 			else if( !equals( existingAnnotations, annotations ) )
 			{
-				// System.out.println( species.getId() + "\t" + existingAnnotations.keySet() + "\t" + annotations.keySet() ); //$NON-NLS-1$ //$NON-NLS-2$
 				species.unsetAnnotation();
 				SbmlUtils.addOntologyTerms( species, existingAnnotations );
 			}
@@ -662,6 +670,57 @@ public class SbmlUpdater
 
 		reaction.setReversible( !reaction.isSetReversible() || reaction.isReversible() );
 	}
+	
+	/**
+	 * 
+	 * @param model
+	 * @param file
+	 * @throws Exception 
+	 * @throws IOException
+	 * @throws FileNotFoundException
+	 */
+	public static void updateSpeciesIds( final Model model ) throws Exception
+	{
+		final Map<String,Set<String>> annotationToStems = new HashMap<>();
+		
+		for( Species species : model.getListOfSpecies() )
+		{
+			final String stem = species.getId().substring( 0, species.getId().lastIndexOf( '_' ) + 1 );
+			
+			for( Entry<OntologyTerm,Object[]> entry : SbmlUtils.getOntologyTerms( species ).entrySet() )
+			{
+				final String key = entry.getKey().toUri() + "\t" + Arrays.toString( entry.getValue() ) + "\t" + SbmlUtils.getFormula( model, species ) + "\t" + SbmlUtils.getCharge( model, species ); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
+				
+				Set<String> stems = annotationToStems.get( key );
+				
+				if( stems == null )
+				{
+					stems = new HashSet<>();
+					annotationToStems.put( key, stems );
+				}
+				
+				stems.add( stem );
+			}
+		}
+
+		final Map<String,String> speciesIds = new HashMap<>();
+		
+		for( Entry<String,Set<String>> entry : annotationToStems.entrySet() )
+		{
+			if( entry.getValue().size() > 1 )
+			{
+				final String[] ids = entry.getValue().toArray( new String[ entry.getValue().size() ] );
+				final String preferredId = SbmlDeleter.getPreferredId( ids );
+				
+				for( String id : ids )
+				{
+					speciesIds.put( preferredId + "(?=[a-z])", id ); //$NON-NLS-1$
+				}
+			}
+		}
+		
+		updateSpeciesIds( model, speciesIds );
+	}
 
 	/**
 	 * 
@@ -805,8 +864,9 @@ public class SbmlUpdater
 	 * @param chebiTerm
 	 * @param inchiTerm
 	 * @param qualifier
+	 * @throws Exception 
 	 */
-	private static void addOntologyTerms( final Species species, final OntologyTerm chebiTerm, final OntologyTerm inchiTerm, final Qualifier qualifier )
+	private static void addOntologyTerms( final Species species, final OntologyTerm chebiTerm, final OntologyTerm inchiTerm, final Qualifier qualifier ) throws Exception
 	{
 		final Object[] predicates = new Object[] { Type.BIOLOGICAL_QUALIFIER, qualifier };
 		final Map<OntologyTerm,Object[]> ontologyTerms = new TreeMap<>();
@@ -817,6 +877,7 @@ public class SbmlUpdater
 			ontologyTerms.put( inchiTerm, predicates );
 		}
 
+		species.setName( chebiTerm.getName() );
 		SbmlUtils.addOntologyTerms( species, ontologyTerms );
 	}
 
@@ -839,7 +900,7 @@ public class SbmlUpdater
 			{
 				if( species.getId().matches( entry.getKey() ) )
 				{
-					if( SbmlUtils.getNotes( species ).get( term ) != null && SbmlUtils.getNotes( species ).get( term ).equals( entry.getValue().toString() ) )
+					if( SbmlUtils.getNotes( species ).get( term ) != null && SbmlUtils.getNotes( species ).get( term ).equals( entry.getValue() ) )
 					{
 						System.out.println( species.getId() + " " + term + " doesn't need updating" ); //$NON-NLS-1$ //$NON-NLS-2$
 					}
@@ -855,53 +916,6 @@ public class SbmlUpdater
 			}
 		}
 	}
-
-	/**
-	 * 
-	 * @param reaction
-	 * @param update
-	 * @return boolean
-	 */
-	/*
-	 * private static boolean updateReaction( final Reaction reaction, final
-	 * String[] update ) { final String REACTANT = "REACTANT"; //$NON-NLS-1$
-	 * final String PRODUCT = "PRODUCT"; //$NON-NLS-1$ final String REVERSE =
-	 * "REVERSE"; //$NON-NLS-1$ final String REMOVE = "REMOVE"; //$NON-NLS-1$
-	 * final int OPERATION_ID = 1;
-	 * 
-	 * final String speciesRefId = update[ OPERATION_ID ]; boolean updated =
-	 * false;
-	 * 
-	 * if( speciesRefId.equals( REACTANT ) ) { final SpeciesReference ref = new
-	 * SpeciesReference(); ref.setSpecies( update[ REPLACEMENT_SPECIES_REF_ID ]
-	 * ); reaction.addReactant( ref ); updated = true; } else if(
-	 * speciesRefId.equals( PRODUCT ) ) { final SpeciesReference ref = new
-	 * SpeciesReference(); ref.setSpecies( update[ REPLACEMENT_SPECIES_REF_ID ]
-	 * ); reaction.addProduct( ref ); updated = true; } else if(
-	 * speciesRefId.equals( REMOVE ) ) { for( Iterator<SpeciesReference>
-	 * iterator = reaction.getListOfReactants().iterator(); iterator.hasNext();
-	 * ) { final SpeciesReference ref = iterator.next();
-	 * 
-	 * if( ref.getSpecies().matches( update[ REPLACEMENT_SPECIES_REF_ID ] ) ) {
-	 * iterator.remove(); updated = true; } }
-	 * 
-	 * for( Iterator<SpeciesReference> iterator =
-	 * reaction.getListOfProducts().iterator(); iterator.hasNext(); ) { final
-	 * SpeciesReference ref = iterator.next();
-	 * 
-	 * if( ref.getSpecies().matches( update[ REPLACEMENT_SPECIES_REF_ID ] ) ) {
-	 * iterator.remove(); updated = true; } } } else if( speciesRefId.equals(
-	 * REVERSE ) ) { reverse( reaction ); updated = true; } else { for(
-	 * SpeciesReference ref : reaction.getListOfReactants() ) { if(
-	 * ref.getSpecies().equals( speciesRefId ) ) { ref.setSpecies( update[
-	 * REPLACEMENT_SPECIES_REF_ID ] ); updated = true; } }
-	 * 
-	 * for( SpeciesReference ref : reaction.getListOfProducts() ) { if(
-	 * ref.getSpecies().equals( speciesRefId ) ) { ref.setSpecies( update[
-	 * REPLACEMENT_SPECIES_REF_ID ] ); updated = true; } } }
-	 * 
-	 * return updated; }
-	 */
 
 	/**
 	 * 

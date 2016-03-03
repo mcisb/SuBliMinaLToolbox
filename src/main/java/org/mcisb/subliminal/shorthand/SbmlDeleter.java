@@ -78,8 +78,6 @@ public class SbmlDeleter
 			}
 
 			proportionBalanced = newProportionBalanced;
-			// System.out.println( proportionBalanced );
-			// System.out.println();
 		}
 	}
 
@@ -106,7 +104,7 @@ public class SbmlDeleter
 				}
 				else
 				{
-					final String preferredId = getPreferredId( species.getId(), speciesMatchId );
+					final String preferredId = getPreferredId( new String[] { species.getId(), speciesMatchId } );
 
 					if( preferredId.equals( speciesMatchId ) )
 					{
@@ -533,14 +531,10 @@ public class SbmlDeleter
 	 * @param id2
 	 * @return String
 	 */
-	private static String getPreferredId( final String id1, final String id2 )
+	public static String getPreferredId( final String[] ids )
 	{
-		if( rankAlphabetic( id1 ) > rankAlphabetic( id2 ) )
-		{
-			return id1;
-		}
-
-		return id2;
+		Arrays.sort( ids, IdComparator );
+		return ids[0];
 	}
 
 	/**
@@ -551,19 +545,7 @@ public class SbmlDeleter
 	 */
 	private static String getPreferredReaction( final Reaction reaction1, final Reaction reaction2 )
 	{
-		/*
-		 * final boolean reaction1irreversible = reaction1.isSetReversible() &&
-		 * !reaction1.isReversible(); final boolean reaction2irreversible =
-		 * reaction2.isSetReversible() && !reaction2.isReversible();
-		 * 
-		 * if( reaction1irreversible && !reaction2irreversible ) { return
-		 * reaction1.getId(); }
-		 * 
-		 * if( reaction2irreversible && !reaction1irreversible ) { return
-		 * reaction2.getId(); }
-		 */
-
-		return getPreferredId( reaction1.getId(), reaction2.getId() );
+		return getPreferredId( new String[] { reaction1.getId(), reaction2.getId() } );
 	}
 
 	/**
@@ -571,7 +553,7 @@ public class SbmlDeleter
 	 * @param id1
 	 * @return float
 	 */
-	private static float rankAlphabetic( final String id )
+	static float rankAlphabetic( final String id )
 	{
 		float alphabetic = 0;
 
@@ -585,4 +567,25 @@ public class SbmlDeleter
 
 		return alphabetic / id.length();
 	}
+	
+	/**
+	 * 
+	 */
+	public static Comparator<String> IdComparator = new Comparator<String>()
+	{
+		/*
+		 * (non-Javadoc)
+		 * @see java.util.Comparator#compare(java.lang.Object, java.lang.Object)
+		 */
+		@Override
+		public int compare( final String id1, final String id2 )
+		{
+			if( rankAlphabetic( id1 ) > rankAlphabetic( id2 ) )
+			{
+				return -1;
+			}
+
+			return 1;
+		}
+	};
 }
