@@ -89,7 +89,7 @@ public class SbmlDeleter
 	public static void deleteDuplicateSpecies( final Model model ) throws Exception
 	{
 		final Map<String,String> tagToSpeciesId = new HashMap<>();
-
+		
 		for( Species species : model.getListOfSpecies() )
 		{
 			final String tag = getTag( model, species );
@@ -108,15 +108,16 @@ public class SbmlDeleter
 
 					if( preferredId.equals( speciesMatchId ) )
 					{
-						System.out.println( "REPLACEMENT:\t" + species.getId() + "\t" + speciesMatchId ); //$NON-NLS-1$ //$NON-NLS-2$
-						updateReactions( model.getListOfReactions(), species.getId(), speciesMatchId );
+						System.out.println( "REPLACEMENT:\t" + species.getId() + "\t" + preferredId ); //$NON-NLS-1$ //$NON-NLS-2$
+						updateReactions( model.getListOfReactions(), species.getId(), preferredId );
 					}
 					else
 					{
-						System.out.println( "REPLACEMENT:\t" + speciesMatchId + "\t" + species.getId() ); //$NON-NLS-1$ //$NON-NLS-2$
-						updateReactions( model.getListOfReactions(), speciesMatchId, species.getId() );
-						tagToSpeciesId.put( tag, species.getId() );
+						System.out.println( "REPLACEMENT:\t" + speciesMatchId + "\t" + preferredId ); //$NON-NLS-1$ //$NON-NLS-2$
+						updateReactions( model.getListOfReactions(), speciesMatchId, preferredId );
 					}
+					
+					tagToSpeciesId.put( tag, preferredId );
 				}
 			}
 		}

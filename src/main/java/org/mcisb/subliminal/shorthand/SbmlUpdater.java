@@ -714,7 +714,7 @@ public class SbmlUpdater
 				
 				for( String id : ids )
 				{
-					speciesIds.put( preferredId + "(?=[a-z])", id ); //$NON-NLS-1$
+					speciesIds.put( id + "(?=[a-z])", preferredId ); //$NON-NLS-1$
 				}
 			}
 		}
