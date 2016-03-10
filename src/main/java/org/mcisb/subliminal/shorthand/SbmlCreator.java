@@ -225,7 +225,11 @@ public class SbmlCreator
 		{
 			final ChebiTerm chebiTerm = (ChebiTerm)ontologyTerm;
 
-			SbmlUtils.setFormula( (Species)sbase, chebiTerm.getFormula() );
+			if( chebiTerm.getFormula() != null )
+			{
+				SbmlUtils.setFormula( (Species)sbase, chebiTerm.getFormula() );
+			}
+			
 			final int chebiCharge = chebiTerm.getCharge();
 			SbmlUtils.setCharge( (Species)sbase, chebiCharge == NumberUtils.UNDEFINED ? 0 : chebiCharge );
 
