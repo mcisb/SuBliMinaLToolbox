@@ -43,4 +43,19 @@ public class SbmlReformatter
 			}
 		}
 	}
+	
+	/**
+	 * 
+	 * @param model
+	 */
+	public static void checkNames( final Model model )
+	{
+		for( Species species : model.getListOfSpecies() )
+		{
+			if( !species.isSetName() )
+			{
+				species.setName( species.getId() );
+			}
+		}
+	}
 }
