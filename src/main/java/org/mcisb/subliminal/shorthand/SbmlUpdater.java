@@ -281,29 +281,31 @@ public class SbmlUpdater
 			{
 				if( reaction.getId().matches( entry.getKey() ) )
 				{
-					switch( entry.getValue().toLowerCase() )
+					for( String key : entry.getValue().toLowerCase().split( "\\|" ) ) //$NON-NLS-1$
 					{
-						case "true": //$NON-NLS-1$
+						switch( key )
 						{
-							updateReversibility( reaction, true );
-							break;
-						}
-						case "false": //$NON-NLS-1$
-						{
-							updateReversibility( reaction, false );
-							break;
-						}
-						case "reverse": //$NON-NLS-1$
-						{
-							reverse( reaction );
-							break;
-						}
-						default:
-						{
-							// Take no action.
+							case "true": //$NON-NLS-1$
+							{
+								updateReversibility( reaction, true );
+								break;
+							}
+							case "false": //$NON-NLS-1$
+							{
+								updateReversibility( reaction, false );
+								break;
+							}
+							case "reverse": //$NON-NLS-1$
+							{
+								reverse( reaction );
+								break;
+							}
+							default:
+							{
+								// Take no action.
+							}
 						}
 					}
-					
 				}
 			}
 		}
