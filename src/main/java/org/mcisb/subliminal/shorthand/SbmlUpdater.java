@@ -252,6 +252,7 @@ public class SbmlUpdater
 
 			if( lowerBound == 0 && upperBound == 0 )
 			{
+				System.out.println( "UNBLOCKING:\t" + reaction.getId() ); //$NON-NLS-1$
 				updateReversibility( reaction, reaction.getReversible() );
 			}
 		}
